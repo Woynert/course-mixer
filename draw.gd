@@ -12,12 +12,21 @@ const DAYNAME = [
 	"Lun", "Mar", "Mie", "Jue", "Vie"
 ]
 
+const DAYCODE = {
+	lun = 0,
+	mar = 1,
+	mie = 2,
+	jue = 3,
+	vie = 4,
+}
+
 # estructura de una hora (array)
 # 0 day -> DAY
 # 1 start -> 1-24
 # 2 end -> 1-24
 
 class Course:
+	var level: String
 	var name: String
 	var nrc: String
 	var hours: Array = []
@@ -77,7 +86,7 @@ func _ready():
 	
 	# get data
 	courses = data()
-	print(courses[1].hours)
+	#print(courses[1].hours)
 	
 	# generate controls
 	genControls()
@@ -177,7 +186,7 @@ func _draw():
 			var hour: Array = c.hours[j]
 			
 			# day
-			var x1 = xstr + w * hour[0] 
+			var x1 = xstr + w * DAYCODE[hour[0]]
 			# hora
 			var y1 = ystr + ht * ((hour[1] -4.0) / ymarks)
 			var yend = ystr + ht * ((hour[2] -4.0) / ymarks)
@@ -196,7 +205,7 @@ func _draw():
 			mylabel.margin_right = x1+w
 			mylabel.autowrap = true
 			
-			mylabel.text = c.name
+			mylabel.text = c.name + " " + c.nrc
 			mylabel.set("custom_fonts/font", dynamic_font)
 			mylabel.set("custom_colors/font_color", BLACK)
 			volconlab.add_child(mylabel)
@@ -217,7 +226,7 @@ func genControls():
 		print()
 		
 		c = listitem.instance()
-		c.get_node("HBoxContainer/Label").text = courses[i].nrc + " " + courses[i].name
+		c.get_node("HBoxContainer/Label").text = courses[i].level + " " + courses[i].nrc + " " + courses[i].name
 		
 		# connect signal
 		cb = c.get_node("HBoxContainer/CheckBox")
@@ -246,25 +255,27 @@ func showSelectedCourses():
 func data() -> Array:
 	
 	var c = []
+	"""
 	c.append(create_class("ASEGURAMIENTO","8820",[
-		[DAY.LUN, 14, 16],
-		[DAY.MAR, 14, 16]
+		["lun", 14, 16],
+		["mar", 14, 16]
 	]))
 	c.append(create_class("DERECHO INFORMATICO","5559",[
-		[DAY.LUN, 7, 8.4],
-		[DAY.JUE, 7, 8.4]
+		["lun", 7, 8.4],
+		["jue", 7, 8.4]
 	]))
 	c.append(create_class("Mobiles","17282",[
-		[DAY.LUN, 10, 11.4]
-	]))
+		["lun", 10, 11.4]
+	]))"""
 		
 	return c
 	
-func create_class(name: String, nrc: String, hours: Array) -> Course:
+func create_class(name: String, nrc: String, hours: Array, level: String) -> Course:
 	var c = Course.new()
 	c.name  = name
 	c.nrc   = nrc
 	c.hours = hours
+	c.level = level
 	
 	activeCourses.append(false)
 	return c
@@ -277,9 +288,23 @@ func parse_json_to_courses(json: Array):
 	courses = []
 	
 	for c in json:
-		courses.append(create_class(c["name"], c["nrc"], c["hours"]))
+		
+		var hours: Array
+		
+		# convert hours
+		for h in c["Hours"]:
+			hours.append([h["Day"], h["Start"], h["End"]])
+			
+		print(hours)
+		courses.append(create_class(c["Title"], c["Nrc"], hours, c["Level"]))
+		
+	# reset selected courses
+	for i in range(activeCourses.size()):
+		activeCourses[i] = false
 		
 	genControls()
+	self.update()
+	
 	
 	
 func free_children(node: Node):

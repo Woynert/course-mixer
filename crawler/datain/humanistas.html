@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="keywords" content="horariosupb, horarios upb, UPB Bucaramanga, horarios Seccional Bucaramanga">
+<meta charset="utf-8">
+        <title>Universidad Pontificia BolivarianaSkeleton Application</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Le styles -->
+        <link href="humanista_files/dataTables.css" media="screen" rel="stylesheet" type="text/css">
+<link href="humanista_files/bootstrap.css" media="screen" rel="stylesheet" type="text/css">
+<link href="humanista_files/bootstrap-theme.css" media="screen" rel="stylesheet" type="text/css">
+<link href="humanista_files/style.css" media="screen" rel="stylesheet" type="text/css">
+<link href="humanista_files/id-style.css" media="screen" rel="stylesheet" type="text/css">
+<link href="https://horariosupb.bucaramanga.upb.edu.co/img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+        <!-- Scripts -->
+        <!--[if lt IE 9]><script type="text/javascript" src="/js/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script type="text/javascript" src="/js/respond.min.js"></script><![endif]-->
+<script type="text/javascript" src="humanista_files/jquery-1.js"></script>
+<script type="text/javascript" src="humanista_files/jquery_002.js"></script>
+<script type="text/javascript" src="humanista_files/bootstrap.js"></script>
+<script type="text/javascript" src="humanista_files/jquery.js"></script>
+<script type="text/javascript" src="humanista_files/dataTables.js"></script>
+<script type="text/javascript" src="humanista_files/id-javascript.js"></script>
+    </head>
+<body id="i-body">
+	<div class="jumbotron" id="i-jumbotron">
+		<div class="container" id="i-container">
+			<div class="page-header" id="i-page-header">
+				<img src="humanista_files/logo.png">
+			 </div>
+			<nav class="navbar navbar-inverse" id="i-nav">
+				<div class="container-fluid" id="i-container-fluid">
+					<div class="navbar-header" id="i-navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<!--<a class="navbar-brand" id="i-navbar-brand" href="www.upb.edu.co" target="">Universidad
+							Pontificia Bolivariana</a> -->
+					</div>
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<ul class="nav nav-tabs navbar-right" id="i-nav-tabs">   
+    <li><a href="https://horariosupb.bucaramanga.upb.edu.co/">Home</a></li>
+    
+    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" id="i-active" href="https://horariosupb.bucaramanga.upb.edu.co/?var=PT13TmhGek4yZ2pZbFJHTzNrVE0zWVRNM1F6TTJBRE16WVdPMk1qTWpWak56a1RabFZXTXpRRE9kOWpZUVZIUXY4cnd6OVdTeUJrVXZobUtiUkRPeVlUUGs1V1lTZFdZc1ptSjRWR1p1bFdQazlHYTBWV2JtNDJicFJYWTA1V1p6Vm1jdzFqY2x4R2J2SkhkdTkyWW00MmJwUlhZMDVXWnpWbWN3MVRac1ZIWnYxbUo=">Horarios<span class="caret"></span></a>
+		<ul class="dropdown-menu" id="i-dropdown-menu">
+		  <li><a href="https://horariosupb.bucaramanga.upb.edu.co/?var=PVVUTjBVVE00a2pOeWdqWTRjVE00RVdaaFJqWjVRMlk1QWpabUpXWmtKV080RVdad01ETmhKVFgvSUdVMUIwTC9LOGN2bGtjQUoxYm9weVczZ1RPeTBEWnVGbVVuRkdibVp5Y2xOWFlzTldQazlHYTBWV2JtNDJicFJYWTA1V1p6Vm1jdzFqY2x4R2J2SkhkdTkyWW00MmJwUlhZMDVXWnpWbWN3MVRac1ZIWnYxbUo="><span class="glyphicon glyphicon-book"></span>&nbsp;Clases</a></li>
+		  <li><a href="https://horariosupb.bucaramanga.upb.edu.co/?var=PUlUT21SVE54a1RaMEkyTXpjRE0yWVdaaFJtWXlZV08wTTJNbVZ6TTVBak5oUjJOa05XTndJVFgvSUdVMUIwTC9LOGN2bGtjQUoxYm9weVcxWXpOejBEWnVGbVVuRkdibVp5Y2x4V1lwTm1jaEJYUGs5R2EwVldibTQyYnBSWFkwNVdaelZtY3cxamNseEdidkpIZHU5MlltNDJicFJYWTA1V1p6Vm1jdzFUWnNWSFp2MW1K"><span class="glyphicon glyphicon-calendar"></span>&nbsp;Exámenes</a></li>
+		  <li><a href="https://horariosupb.bucaramanga.upb.edu.co/?var=PT13WWhKaloxUXpZaEJUTjFVV001Z3pZa2xETTFRelltUmpOekF6TTJjalpqVlRZbUZXTTFnak1kOWpZUVZIUXY4cnd6OVdTeUJrVXZobUtiUkRPeWdUUGs1V1lTZFdZc1ptSno5V2F5OUdkbHhHYzFOWFBrOUdhMFZXYm00MmJwUlhZMDVXWnpWbWN3MWpjbHhHYnZKSGR1OTJZbTQyYnBSWFkwNVdaelZtY3cxVFpzVkhadjFtSg=="><span class="glyphicon glyphicon-list-alt"></span>&nbsp;Supletorios</a></li>
+	<!--  <li ><a  href="?var=PT1BTnlVRE53VUdNaU5qTWtGMk0yWXpZMVlqTjRVellqUlROeUVqTTJRVE80VUdPd2t6TWtsRE9kOWpZUVZIUXY4cnd6OVdTeUJrVXZobUtiQnpOd0lUUGs1V1lTZFdZc1ptSnpWbWJ2bDJZaFJYYXNsbVloaFdQazlHYTBWV2JtNDJicFJYWTA1V1p6Vm1jdzFqY2x4R2J2SkhkdTkyWW00MmJwUlhZMDVXWnpWbWN3MVRac1ZIWnYxbUo="><span class="glyphicon glyphicon-repeat"></span>&nbsp;Alternancia</a></li>	  
+		  -->
+		  <li><a href="https://horariosupb.bucaramanga.upb.edu.co/?var=Mk1tTWhKV01pZFRNMklUWWtkRE4wWTJNa0p6TTBJVFkzY0RPMUl6WTRRRFo0WUdaeWt6TTUwMVBpQlZkQTl5dkNQM2JKSkhRUzlHYXFzbE55QXpNOVFtYmhKMVpoeG1abU1YWnNGV2FrVldibEpYUGs5R2EwVldibTQyYnBSWFkwNVdaelZtY3cxamNseEdidkpIZHU5MlltNDJicFJYWTA1V1p6Vm1jdzFUWnNWSFp2MW1K"><span class="glyphicon glyphicon-repeat"></span>&nbsp;Refuerzos académicos</a></li>
+		  
+		  <li><a href="https://horariosupb.bucaramanga.upb.edu.co/?var=PT1nTjJNRE4ySXpOa0ZqWTJBVFkyWWpOaE5HT2taMlltTkRPa2x6TTFZR04wWVRPeFlUWndrRE5kOWpZUVZIUXY4cnd6OVdTeUJrVXZobUtiQnpNeE1UUGs1V1lTZFdZc1ptSnNGbWMwTlhadFYyY3lWR2R1bFdQazlHYTBWV2JtNDJicFJYWTA1V1p6Vm1jdzFqY2x4R2J2SkhkdTkyWW00MmJwUlhZMDVXWnpWbWN3MVRac1ZIWnYxbUo="><span class="glyphicon glyphicon-flash"></span>&nbsp;Ínter Semestral</a></li>		  		             
+		</ul>
+	</li>
+
+	<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Admin<span class="caret"></span></a>
+		<ul class="dropdown-menu" id="i-dropdown-menu">
+    		            <li><a href="https://horariosupb.bucaramanga.upb.edu.co/?var=PWtEWm1Kell4Y1RObEJETzBNR09pQmpZbFZXTzBJbVlqaGpZaVJqWWpOR08yQWpNMk1UWXhNV1gvSUdVMUIwTC9LOGN2bGtjQUoxYm9weVd5UVRONDBEWnVGbVVuRkdibVpDZWxSbWJwMURadmhHZGwxbUp1OVdhMEYyWXBSbmJsaEdkMUZXUHlWR2JzOW1jMDUyYmpaaWJ2bEdkaE5XYTA1V1pvUlhkaDFUWnNWSFp2MW1K"><span class="glyphicon glyphicon-log-in"></span>&nbsp;Login</a></li>
+                        
+		</ul>
+	</li>
+</ul>					</div>
+				</div>
+			</nav>
+		</div>
+
+	</div>
+
+	<div class="container" id="i-manin-container">
+            
+<div class="row">
+	<div class="col-sm-3">
+		<h2>Clases</h2>
+	</div>
+	<div class="col-sm-9" id="i-bar-button">
+		<div class="btn-group">
+			<button type="button" class="btn btn-link" id="i-clases">
+				<span class="glyphicon glyphicon-book"></span>&nbsp;Clases
+			</button>
+			<button type="button" class="btn btn-link" id="i-parciales">
+				<span class="glyphicon glyphicon-calendar"></span>&nbsp;Exámenes
+			</button>
+			<button type="button" class="btn btn-link" id="i-supletorios">
+				<span class="glyphicon glyphicon-list-alt"></span>&nbsp;Supletorios
+			</button>
+			<!-- <button type="button" class="btn btn-link" id="i-habilitaciones">
+				<span class="glyphicon glyphicon-repeat"></span>&nbsp;Habilitaciones
+			</button> -->
+			<button type="button" class="btn btn-link" id="i-remediales">
+				<span class="glyphicon glyphicon-refresh"></span>&nbsp;Refuerzos académicos
+			</button> 
+			<button type="button" class="btn btn-link" id="i-intersemestral">
+				<span class="glyphicon glyphicon-flash"></span>&nbsp;Ínter Semestral
+			</button>
+		</div>
+	</div>
+</div>
+
+
+<div class="panel panel-default">
+<div class="panel-heading">
+<form method="post" name="facultad" enctype="multipart/form-data" class="form-inline" role="form" id="facultadform_id" action="?var=PUVtWWpaalkzQXpNeWNETzNVR1o0a0ROaFZUTnlVRFpoTnpZMUlUWnpJbU40a2pObVJXWXdVVFgvSUdVMUIwTC9LOGN2bGtjQUoxYm9weVd3Y1RPejBEWnVGbVVuRkdibVp5Y2xOWFlzTldQazlHYTBWV2JtNDJicFJYWTA1V1p6Vm1jdzFqY2x4R2J2SkhkdTkyWW00MmJwUlhZMDVXWnpWbWN3MVRac1ZIWnYxbUo="><div class="form-group">
+<label for="facultad_id">Facultad:</label>&nbsp;
+<select name="facultad" id="facultad_id" class="form-control" title="Facultad" required="required"><option value="">Seleccionar</option>
+<option value="NEVqWXhFVE40RVdNbFp6TnlBRE0wQVRNM1VtTjBJek15UTJNbU5UWWlaV09qWldaaEJETjQwMVBpQlZkQTl5dkNQM2JKSkhRUzlHYXFzVk8yUUROME1ESjlRbWJoSkZRbkZHYm1aU013QVRN">Administración De Empresas</option>
+<option value="NUlETW1GbU5pSjJOd1VqWWhSRE8wWW1ONE1XT21Wek00VW1NeFEyTWtKbVpsTmpNMFFXWnowMVBpQlZkQTl5dkNQM2JKSkhRUzlHYXFzbE55a3pOMUlESjlRbWJoSkZRbkZHYm1aaU13QVRN">Negocios Internacionales</option>
+<option value="eVFETzFRVFkza3pOM00yWWhKV08xRVdaa0pHWjVjek4xVW1ZMlVtTmtSak16RURNNGNUWTEwMVBpQlZkQTl5dkNQM2JKSkhRUzlHYXFzVk96UVROeVlESjlRbWJoSkZRbkZHYm1aeU13QVRN">Derecho</option>
+<option value="M1kyTndRak53VXpZd0lETnpRek0zSW1ZeUFETjFZMk40TWpaelFtTTRrelkwUWpZbWxUWW0xMVBpQlZkQTl5dkNQM2JKSkhRUzlHYXFzRk94UURPNUVESjlRbWJoSkZRbkZHYm1aQ053QVRN">Comunicación Social - Periodismo</option>
+<option value="emd6WXpRV1o0QWpNMElUWjJVVE0zWWpObVIyTjBFRE9rZGpZM1VEWjBFak15RW1ZeVVtTjUwMVBpQlZkQTl5dkNQM2JKSkhRUzlHYXFzbE41VVRPMElESjlRbWJoSkZRbkZHYm1aU053QVRN" selected="selected">Departamento De Formación Humanista</option>
+<option value="eklUT3lJV1l3TXpOak56TnprVE0xSUROak5XWTFJMlk0TURabE5UTzBrek1sbFRNaWRETTIwMVBpQlZkQTl5dkNQM2JKSkhRUzlHYXFzMU4xQVRPelFESjlRbWJoSkZRbkZHYm1aaU53QVRN">Electivas</option>
+<option value="eUlET2pGalkxUXpNeFFETndNR00wZ0RNNEFET2tsRE5oUkROMGdUWmtSbU40SW1OM2NET2sxMVBpQlZkQTl5dkNQM2JKSkhRUzlHYXFzVk8xZ0RPM0VESjlRbWJoSkZRbkZHYm1aeU53QVRN">Psicología</option>
+<option value="eFVtWWhkRE53UWpZelVUTndFRE5rbGpZekVtWnpJMk4xWTJZNEVHTjJNRE5oQmpNNFFtTjAwMVBpQlZkQTl5dkNQM2JKSkhRUzlHYXFzRk15Y1RONUVESjlRbWJoSkZRbkZHYm1aQ093QVRN">Ingeniería Ambiental</option>
+<option value="MmdET2hOek5rVkdOelFUTzJNVFlrRkdaaEpHTTJNbU5rUnpOMUlHTXlrelkxSUROa1JqTWkxMVBpQlZkQTl5dkNQM2JKSkhRUzlHYXFzVk8zQXpNMGdESjlRbWJoSkZRbkZHYm1aU093QVRN">Ingeniería Civil</option>
+<option value="bFpUTXlZV09tVkRNeVlXTTNRV1oyVW1ZMklXTmlsVE00TWpaak5EWm1Wak1oSnpObFpqWXcwMVBpQlZkQTl5dkNQM2JKSkhRUzlHYXFzbE16UWpOMVVESjlRbWJoSkZRbkZHYm1aQ014QVRN">Ingeniería Electrónica</option>
+<option value="NGt6WWtsVE9pRlRNaFpHT3dVVE5qSkRNMll6WWxWV08zQXpONGtUWXlRall4UVdNNUlET2kxMVBpQlZkQTl5dkNQM2JKSkhRUzlHYXFzRk96a0RPNFlESjlRbWJoSkZRbkZHYm1aU014QVRN">Ingeniera Industrial</option>
+<option value="bVZETmxaVE8zUUROM1lXTjJJVFpobGpaNGdEWnpJMk13a0RaaGhUTzJnRFppWldOM2dUTjMwMVBpQlZkQTl5dkNQM2JKSkhRUzlHYXFzRk4ya3pOMElESjlRbWJoSkZRbkZHYm1aaU14QVRN">Ingeniería Mecánica</option>
+<option value="bU5XTWxCak5tQnpZd0VXTXpjelloSm1Na05XTTNNR1p6STJZaVJ6WTJZek0ySXpZbVJHTncwMVBpQlZkQTl5dkNQM2JKSkhRUzlHYXFzMU53RURNeUlESjlRbWJoSkZRbkZHYm1aeU14QVRN">Ingeniería De Sistemas E Informática</option>
+<option value="MlVqWTBFMk0xWWpZekVHTTNNMk1pTm1aeWN6TWxkVE13TWpNMUF6WWlCek5tVkdObFJUTXowMVBpQlZkQTl5dkNQM2JKSkhRUzlHYXFzVk16QVRNNE1ESjlRbWJoSkZRbkZHYm1aQ054QVRN">Departamento De Ciencias Básicas</option>
+<option value="alpUTWhKak1rUldaM1FET2xsVE9pbEROaUpqWnlBalozQVRZNUl6TW1WR041Z0RPNE1ETWgxMVBpQlZkQTl5dkNQM2JKSkhRUzlHYXFzRk8xQURNM0VESjlRbWJoSkZRbkZHYm1aU054QVRN">Centro De Lenguas</option>
+<option value="MUVHWjBjek15RWpZMFlUWW1GRFptbFRZbEZHWjRRak5sWlRZMmN6TXhRRE0wUVdaaFZHTTMwMVBpQlZkQTl5dkNQM2JKSkhRUzlHYXFzRk80Z0RNd1FESjlRbWJoSkZRbkZHYm1aaU54QVRN">Diseño Gráfico</option>
+<option value="MllqWTVRRFppUm1NelVtWjNBRE4zSXpNaFpXWnpjek0wSUdaa1ptWXlRRE4zUUdPeFF6TTEwMVBpQlZkQTl5dkNQM2JKSkhRUzlHYXFzbE4zY2pOeUlESjlRbWJoSkZRbkZHYm1aeU54QVRN">Ingeniería Eléctrica</option>
+<option value="NUV6TTFNek1oRkdPaFZUT2hsRE5qQkRObUYyTXdnRFpsRm1aa1pHWjBVVE80Z2pZa1ZtTmoxMVBpQlZkQTl5dkNQM2JKSkhRUzlHYXFzRk80Y3pNNUVESjlRbWJoSkZRbkZHYm1aQ015QVRN">Ciencias Políticas Y Gobierno</option></select> 
+</div>
+<div class="form-group">
+<input name="cambiar" type="submit" id="cambiar_id" class="btn btn-default" value="Ver"></div>
+</form></div>
+	<div class="panel-body">
+		<p>OFERTA DE CURSOS REGULARES - PERÍODO PRIMER SEMESTRE 2023 (2023-10) - ESCUELA DE CIENCIAS SOCIALES</p>	
+<div class="table-responsive" style="border: none;">
+<ul class="nav nav-tabs i-nav-tabs-menu">
+<li class="active"><a data-toggle="tab" href="#tab_i-dataTable_0">FH</a></li>
+
+</ul>
+<div class="tab-content i-tab-content">
+<div id="tab_i-dataTable_0" class="tab-pane fade in active">
+
+<table id="i-dataTable_0" class="table table-striped table-bordered table-hover i-dataTable dataTable">
+<thead>
+<tr>
+<th class="sorting_disabled">FAC</th>
+<th class="sorting_disabled">ASIGNATURA</th>
+<th class="sorting_disabled">MATERIA</th>
+<th class="sorting_disabled">CURSO</th>
+<th class="sorting_disabled">NRC</th>
+<th class="sorting_disabled">CRÉDITOS</th>
+<th class="sorting_disabled">LUN</th>
+<th class="sorting_disabled">MAR</th>
+<th class="sorting_disabled">MIER</th>
+<th class="sorting_disabled">JUEV</th>
+<th class="sorting_disabled">VIER</th>
+<th class="sorting_disabled">SABAD</th>
+</tr>
+</thead>
+<tfoot>
+<tr>
+<th>FAC</th>
+<th>ASIGNATURA</th>
+<th>MATERIA</th>
+<th>CURSO</th>
+<th>NRC</th>
+<th>CRÉDITOS</th>
+<th>LUN</th>
+<th>MAR</th>
+<th>MIER</th>
+<th>JUEV</th>
+<th>VIER</th>
+<th>SABAD</th>
+</tr>
+</tfoot>
+<tbody>
+<tr>
+<td colspan="12" rowspan="1">HUMANISMO Y CULTURA CIUDADANA</td>
+</tr>
+<tr>
+<td>FH</td>
+<td>HUMANISMO Y CULTURA CIUDADANA</td>
+<td colspan="1" rowspan="1">5555</td>
+<td>0008</td>
+<td>&nbsp;</td>
+<td colspan="1" rowspan="1">2</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td colspan="12" rowspan="1">CRISTOLOGÍA BÁSICA</td>
+</tr>
+<tr>
+<td>FH</td>
+<td>CRISTOLOGÍA BÁSICA</td>
+<td colspan="1" rowspan="1">5568</td>
+<td>0006</td>
+<td colspan="1" rowspan="1">17170</td>
+<td colspan="1" rowspan="1">2</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>10:00 AM-11:40 AM I304</td>
+<td>&nbsp;</td>
+<td>10:00 AM-11:40 AM I304</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>FH</td>
+<td>CRISTOLOGÍA BÁSICA</td>
+<td colspan="1" rowspan="1">5568</td>
+<td>0006</td>
+<td colspan="1" rowspan="1">10165</td>
+<td colspan="1" rowspan="1">2</td>
+<td>&nbsp;</td>
+<td>02:00 PM-03:40 PM D500</td>
+<td>&nbsp;</td>
+<td>02:00 PM-03:40 PM D500</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>FH</td>
+<td>CRISTOLOGÍA BÁSICA</td>
+<td colspan="1" rowspan="1">5568</td>
+<td>0006</td>
+<td colspan="1" rowspan="1">17386</td>
+<td colspan="1" rowspan="1">2</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>08:00 AM-09:40 AM E402</td>
+<td>&nbsp;</td>
+<td>08:00 AM-09:40 AM E402</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>FH</td>
+<td>CRISTOLOGÍA BÁSICA</td>
+<td colspan="1" rowspan="1">5568</td>
+<td>0006</td>
+<td colspan="1" rowspan="1">17448</td>
+<td colspan="1" rowspan="1">2</td>
+<td>&nbsp;</td>
+<td>08:00 AM-09:40 AM D503</td>
+<td>&nbsp;</td>
+<td>08:00 AM-09:40 AM D503</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>FH</td>
+<td>CRISTOLOGÍA BÁSICA</td>
+<td colspan="1" rowspan="1">5568</td>
+<td>0006</td>
+<td colspan="1" rowspan="1">17590</td>
+<td colspan="1" rowspan="1">2</td>
+<td>08:00 AM-09:40 AM F303</td>
+<td>&nbsp;</td>
+<td>08:00 AM-09:40 AM F303</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>FH</td>
+<td>CRISTOLOGÍA BÁSICA</td>
+<td colspan="1" rowspan="1">5568</td>
+<td>0006</td>
+<td colspan="1" rowspan="1">16953</td>
+<td colspan="1" rowspan="1">2</td>
+<td>06:00 AM-07:40 AM F303</td>
+<td>&nbsp;</td>
+<td>06:00 AM-07:40 AM F303</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>FH</td>
+<td>CRISTOLOGÍA BÁSICA</td>
+<td colspan="1" rowspan="1">5568</td>
+<td>0006</td>
+<td colspan="1" rowspan="1">18491</td>
+<td colspan="1" rowspan="1">2</td>
+<td>08:00 AM-09:40 AM E401</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>08:00 AM-09:40 AM E401</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td colspan="12" rowspan="1">LENGUA Y CULTURA</td>
+</tr>
+<tr>
+<td>FH</td>
+<td>LENGUA Y CULTURA</td>
+<td colspan="1" rowspan="1">5564</td>
+<td>0070</td>
+<td colspan="1" rowspan="1">17280</td>
+<td colspan="1" rowspan="1">2</td>
+<td>10:00 AM-11:40 AM H302</td>
+<td>&nbsp;</td>
+<td>10:00 AM-11:40 AM H302</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>FH</td>
+<td>LENGUA Y CULTURA</td>
+<td colspan="1" rowspan="1">5564</td>
+<td>0070</td>
+<td colspan="1" rowspan="1">17405</td>
+<td colspan="1" rowspan="1">2</td>
+<td>06:00 AM-07:40 AM E201</td>
+<td>&nbsp;</td>
+<td>06:00 AM-07:40 AM E201</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>FH</td>
+<td>LENGUA Y CULTURA</td>
+<td colspan="1" rowspan="1">5564</td>
+<td>0070</td>
+<td colspan="1" rowspan="1">17373</td>
+<td colspan="1" rowspan="1">2</td>
+<td>04:00 PM-05:40 PM L602</td>
+<td>&nbsp;</td>
+<td>04:00 PM-05:40 PM L602</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>FH</td>
+<td>LENGUA Y CULTURA</td>
+<td colspan="1" rowspan="1">5564</td>
+<td>0070</td>
+<td colspan="1" rowspan="1">17462</td>
+<td colspan="1" rowspan="1">2</td>
+<td>&nbsp;</td>
+<td>04:00 PM-05:40 PM G302</td>
+<td>&nbsp;</td>
+<td>04:00 PM-05:40 PM G302</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>FH</td>
+<td>LENGUA Y CULTURA</td>
+<td colspan="1" rowspan="1">5564</td>
+<td>0070</td>
+<td colspan="1" rowspan="1">17248</td>
+<td colspan="1" rowspan="1">2</td>
+<td>10:00 AM-11:40 AM L602</td>
+<td>&nbsp;</td>
+<td>08:00 AM-09:40 AM L603</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>FH</td>
+<td>LENGUA Y CULTURA</td>
+<td colspan="1" rowspan="1">5564</td>
+<td>0070</td>
+<td colspan="1" rowspan="1">16966</td>
+<td colspan="1" rowspan="1">2</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>12:00 PM-01:40 PM K601</td>
+<td>&nbsp;</td>
+<td>12:00 PM-01:40 PM K601</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>FH</td>
+<td>LENGUA Y CULTURA</td>
+<td colspan="1" rowspan="1">5564</td>
+<td>0070</td>
+<td colspan="1" rowspan="1">16986</td>
+<td colspan="1" rowspan="1">2</td>
+<td>04:00 PM-05:40 PM E301</td>
+<td>&nbsp;</td>
+<td>02:00 PM-03:40 PM E301</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>FH</td>
+<td>LENGUA Y CULTURA</td>
+<td colspan="1" rowspan="1">5564</td>
+<td>0070</td>
+<td colspan="1" rowspan="1">17543</td>
+<td colspan="1" rowspan="1">2</td>
+<td>&nbsp;</td>
+<td>12:00 PM-01:40 PM L604</td>
+<td>&nbsp;</td>
+<td>12:00 PM-01:40 PM L604</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>FH</td>
+<td>LENGUA Y CULTURA</td>
+<td colspan="1" rowspan="1">5564</td>
+<td>0070</td>
+<td colspan="1" rowspan="1">17698</td>
+<td colspan="1" rowspan="1">2</td>
+<td>06:00 PM-07:40 PM E201</td>
+<td>&nbsp;</td>
+<td>06:00 PM-07:40 PM E201</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>FH</td>
+<td>LENGUA Y CULTURA</td>
+<td colspan="1" rowspan="1">5564</td>
+<td>0070</td>
+<td colspan="1" rowspan="1">17660</td>
+<td colspan="1" rowspan="1">2</td>
+<td>02:00 PM-03:40 PM G303</td>
+<td>&nbsp;</td>
+<td>02:00 PM-03:40 PM G303</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>FH</td>
+<td>LENGUA Y CULTURA</td>
+<td colspan="1" rowspan="1">5564</td>
+<td>0070</td>
+<td colspan="1" rowspan="1">17711</td>
+<td colspan="1" rowspan="1">2</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>02:00 PM-03:40 PM E401</td>
+<td>&nbsp;</td>
+<td>02:00 PM-03:40 PM E401</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>FH</td>
+<td>LENGUA Y CULTURA</td>
+<td colspan="1" rowspan="1">5564</td>
+<td>0070</td>
+<td colspan="1" rowspan="1">17563</td>
+<td colspan="1" rowspan="1">2</td>
+<td>&nbsp;</td>
+<td>02:00 PM-03:40 PM F301</td>
+<td>&nbsp;</td>
+<td>02:00 PM-03:40 PM F301</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td colspan="12" rowspan="1">ÉTICA GENERAL</td>
+</tr>
+<tr>
+<td>FH</td>
+<td>ÉTICA GENERAL</td>
+<td colspan="1" rowspan="1">5555</td>
+<td colspan="1" rowspan="1">9</td>
+<td colspan="1" rowspan="1">19571</td>
+<td colspan="1" rowspan="1">1</td>
+<td>&nbsp;</td>
+<td>04:00 PM-05:40 PM E301</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>FH</td>
+<td>ÉTICA GENERAL</td>
+<td colspan="1" rowspan="1">5555</td>
+<td colspan="1" rowspan="1">9</td>
+<td colspan="1" rowspan="1">19572</td>
+<td colspan="1" rowspan="1">1</td>
+<td>&nbsp;</td>
+<td>08:00 AM-09:40 AM E401</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>FH</td>
+<td>ÉTICA GENERAL</td>
+<td colspan="1" rowspan="1">5555</td>
+<td colspan="1" rowspan="1">9</td>
+<td colspan="1" rowspan="1">19573</td>
+<td colspan="1" rowspan="1">1</td>
+<td>04:00 PM-05:40 PM E401</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>FH</td>
+<td>ÉTICA GENERAL</td>
+<td colspan="1" rowspan="1">5555</td>
+<td colspan="1" rowspan="1">9</td>
+<td colspan="1" rowspan="1">19574</td>
+<td colspan="1" rowspan="1">1</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>04:00 PM-05:40 PM E301</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>FH</td>
+<td>ÉTICA GENERAL</td>
+<td colspan="1" rowspan="1">5555</td>
+<td colspan="1" rowspan="1">9</td>
+<td colspan="1" rowspan="1">19575</td>
+<td colspan="1" rowspan="1">1</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>08:00 AM-09:40 AM E201</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>FH</td>
+<td>ÉTICA GENERAL</td>
+<td colspan="1" rowspan="1">5555</td>
+<td colspan="1" rowspan="1">9</td>
+<td colspan="1" rowspan="1">19576</td>
+<td colspan="1" rowspan="1">1</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>08:00 AM-09:40 AM E401</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>FH</td>
+<td>ÉTICA GENERAL</td>
+<td colspan="1" rowspan="1">5555</td>
+<td colspan="1" rowspan="1">9</td>
+<td colspan="1" rowspan="1">19577</td>
+<td colspan="1" rowspan="1">1</td>
+<td>02:00 PM-03:40 PM E201</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td colspan="12" rowspan="1">ÉTICA PROFESIONAL</td>
+</tr>
+<tr>
+<td>FH</td>
+<td>ETICA PROFESIONAL</td>
+<td colspan="1" rowspan="1">5555</td>
+<td colspan="1" rowspan="1">10</td>
+<td colspan="1" rowspan="1">19579</td>
+<td colspan="1" rowspan="1">1</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>08:00 AM-09:40 AM C301</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>FH</td>
+<td>ETICA PROFESIONAL</td>
+<td colspan="1" rowspan="1">5555</td>
+<td colspan="1" rowspan="1">10</td>
+<td colspan="1" rowspan="1">19580</td>
+<td colspan="1" rowspan="1">1</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>10:00 AM-11:40 AM C203</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>FH</td>
+<td>ETICA PROFESIONAL</td>
+<td colspan="1" rowspan="1">5555</td>
+<td colspan="1" rowspan="1">10</td>
+<td colspan="1" rowspan="1">19581</td>
+<td colspan="1" rowspan="1">1</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>12:00 PM-01:40 PM C203</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>FH</td>
+<td>ETICA PROFESIONAL</td>
+<td colspan="1" rowspan="1">5555</td>
+<td colspan="1" rowspan="1">10</td>
+<td colspan="1" rowspan="1">19582</td>
+<td colspan="1" rowspan="1">1</td>
+<td>&nbsp;</td>
+<td>10:00 AM-11:40 AM E401</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>FH</td>
+<td>ETICA PROFESIONAL</td>
+<td colspan="1" rowspan="1">5555</td>
+<td colspan="1" rowspan="1">10</td>
+<td colspan="1" rowspan="1">19583</td>
+<td colspan="1" rowspan="1">1</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>10:00 AM-11:40 AM C302</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>FH</td>
+<td>ETICA PROFESIONAL</td>
+<td colspan="1" rowspan="1">5555</td>
+<td colspan="1" rowspan="1">10</td>
+<td colspan="1" rowspan="1">19584</td>
+<td colspan="1" rowspan="1">1</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>08:00 AM-09:40 AM G302</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td colspan="12" rowspan="1">EMPRENDIMIENTO Y RESPONSABILIDAD SOCIAL</td>
+</tr>
+<tr>
+<td colspan="12" rowspan="1"></td>
+</tr>
+<tr>
+<td>FH</td>
+<td>EMPRENDIMIENTO Y RESPONSABILIDAD SOCIAL</td>
+<td colspan="1" rowspan="1">6069</td>
+<td>0001</td>
+<td colspan="1" rowspan="1">17484</td>
+<td colspan="1" rowspan="1">2</td>
+<td>04:00 PM-05:40 PM  H204</td>
+<td>&nbsp;</td>
+<td>04:00 PM-05:40 PM  H204</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>FH</td>
+<td>EMPRENDIMIENTO Y RESPONSABILIDAD SOCIAL</td>
+<td colspan="1" rowspan="1">6069</td>
+<td>0001</td>
+<td colspan="1" rowspan="1">17004</td>
+<td colspan="1" rowspan="1">2</td>
+<td>&nbsp;</td>
+<td>12:00 PM-01:40 PM  C401</td>
+<td>&nbsp;</td>
+<td>12:00 PM-01:40 PM  C401</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>FH</td>
+<td>EMPRENDIMIENTO Y RESPONSABILIDAD SOCIAL</td>
+<td colspan="1" rowspan="1">6069</td>
+<td>0001</td>
+<td colspan="1" rowspan="1">17049</td>
+<td colspan="1" rowspan="1">2</td>
+<td>&nbsp;</td>
+<td>10:00 AM-11:40 AM  C401</td>
+<td>&nbsp;</td>
+<td>10:00 AM-11:40 AM  C401</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>FH</td>
+<td>EMPRENDIMIENTO Y RESPONSABILIDAD SOCIAL</td>
+<td colspan="1" rowspan="1">6069</td>
+<td>0001</td>
+<td colspan="1" rowspan="1">17051</td>
+<td colspan="1" rowspan="1">2</td>
+<td>08:00 AM-09:40 AM  C304</td>
+<td>&nbsp;</td>
+<td>08:00 AM-09:40 AM  C304</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>FH</td>
+<td>EMPRENDIMIENTO Y RESPONSABILIDAD SOCIAL</td>
+<td colspan="1" rowspan="1">6069</td>
+<td>0001</td>
+<td colspan="1" rowspan="1">17111</td>
+<td colspan="1" rowspan="1">2</td>
+<td>&nbsp;</td>
+<td>08:00 AM-09:40 AM  C401</td>
+<td>&nbsp;</td>
+<td>08:00 AM-09:40 AM  C401</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>FH</td>
+<td>EMPRENDIMIENTO Y RESPONSABILIDAD SOCIAL</td>
+<td colspan="1" rowspan="1">6069</td>
+<td>0001</td>
+<td colspan="1" rowspan="1">17533</td>
+<td colspan="1" rowspan="1">2</td>
+<td>&nbsp;</td>
+<td>06:00 AM-07:40 AM  C303</td>
+<td>&nbsp;</td>
+<td>06:00 AM-07:40 AM  C303</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>FH</td>
+<td>EMPRENDIMIENTO Y RESPONSABILIDAD SOCIAL</td>
+<td colspan="1" rowspan="1">6069</td>
+<td>0001</td>
+<td colspan="1" rowspan="1">17134</td>
+<td colspan="1" rowspan="1">2</td>
+<td>06:00 AM-07:40 AM  C401</td>
+<td>&nbsp;</td>
+<td>06:00 AM-07:40 AM  C401</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>FH</td>
+<td>EMPRENDIMIENTO Y RESPONSABILIDAD SOCIAL</td>
+<td colspan="1" rowspan="1">6069</td>
+<td>0001</td>
+<td colspan="1" rowspan="1">16937</td>
+<td colspan="1" rowspan="1">2</td>
+<td>&nbsp;</td>
+<td>02:00 PM-03:40 PM  H303</td>
+<td>&nbsp;</td>
+<td>02:00 PM-03:40 PM  H303</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>FH</td>
+<td>EMPRENDIMIENTO Y RESPONSABILIDAD SOCIAL</td>
+<td colspan="1" rowspan="1">6069</td>
+<td>0001</td>
+<td colspan="1" rowspan="1">17123</td>
+<td colspan="1" rowspan="1">2</td>
+<td>&nbsp;</td>
+<td>08:00 AM-09:40 AM  C303</td>
+<td>&nbsp;</td>
+<td>08:00 AM-09:40 AM  C303</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>FH</td>
+<td>EMPRENDIMIENTO Y RESPONSABILIDAD SOCIAL</td>
+<td colspan="1" rowspan="1">6069</td>
+<td>0001</td>
+<td colspan="1" rowspan="1">17126</td>
+<td colspan="1" rowspan="1">2</td>
+<td>&nbsp;</td>
+<td>04:00 PM-05:40 PM  C304</td>
+<td>&nbsp;</td>
+<td>04:00 PM-05:40 PM  C304</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>FH</td>
+<td>EMPRENDIMIENTO Y RESPONSABILIDAD SOCIAL</td>
+<td colspan="1" rowspan="1">6069</td>
+<td>0001</td>
+<td colspan="1" rowspan="1">16897</td>
+<td colspan="1" rowspan="1">2</td>
+<td>08:00 AM-09:40 AM  C301</td>
+<td>&nbsp;</td>
+<td>08:00 AM-08:50 AM  C301</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>FH</td>
+<td>EMPRENDIMIENTO Y RESPONSABILIDAD SOCIAL</td>
+<td colspan="1" rowspan="1">6069</td>
+<td>0001</td>
+<td colspan="1" rowspan="1">17643</td>
+<td colspan="1" rowspan="1">2</td>
+<td>&nbsp;</td>
+<td>04:00 PM-05:40 AM  C303</td>
+<td>&nbsp;</td>
+<td>04:00 PM-05:40 AM  C303</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>FH</td>
+<td>EMPRENDIMIENTO Y RESPONSABILIDAD SOCIAL</td>
+<td colspan="1" rowspan="1">6069</td>
+<td>0001</td>
+<td colspan="1" rowspan="1">17263</td>
+<td colspan="1" rowspan="1">2</td>
+<td>10:00 AM-11:40 AM  C301</td>
+<td>&nbsp;</td>
+<td>10:00 AM-11:40 AM  C301</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>FH</td>
+<td>EMPRENDIMIENTO Y RESPONSABILIDAD SOCIAL</td>
+<td colspan="1" rowspan="1">6069</td>
+<td>0001</td>
+<td colspan="1" rowspan="1">17719</td>
+<td colspan="1" rowspan="1">2</td>
+<td>02:00 PM-03:40 PM  C301</td>
+<td>&nbsp;</td>
+<td>02:00 PM-03:40 PM  C301</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td colspan="12" rowspan="1"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<script>idataTableNoOrder(document, "#i-dataTable_0");</script>
+    </div>
+</div>
+            <hr>
+		<footer>
+			<p>© 2022 by Universidad Pontificia Bolivariana. All rights reserved.</p>
+		</footer>
+	</div>
+	<!-- /container -->
+        <script type="text/javascript">
+    //<!--
+    $("#i-clases").click(function(){
+  window.location.assign("?var=PT1nTWtWbU53Z0RPMElXTTFRRE15VTJZM0lXT2tSRFp4VW1ONVVXTzRVVFpoVldaaEZqTjBRek1kOWpZUVZIUXY4cnd6OVdTeUJrVXZobUtiWnpNMjBEWnVGbVVuRkdibVp5Y2xOWFlzTldQazlHYTBWV2JtNDJicFJYWTA1V1p6Vm1jdzFqY2x4R2J2SkhkdTkyWW00MmJwUlhZMDVXWnpWbWN3MVRac1ZIWnYxbUo=");
+});
+$("#i-parciales").click(function(){
+  window.location.assign("?var=PVVHT3lNRE01UW1NeVVqWnhJV09oSjJZbFZ6WTNFMk4wQVRZak5XTWlkVFlqZHpObUJqWndRVFgvSUdVMUIwTC9LOGN2bGtjQUoxYm9weVcwUVRNeDBEWnVGbVVuRkdibVp5Y2x4V1lwTm1jaEJYUGs5R2EwVldibTQyYnBSWFkwNVdaelZtY3cxamNseEdidkpIZHU5MlltNDJicFJYWTA1V1p6Vm1jdzFUWnNWSFp2MW1K");
+});
+$("#i-supletorios").click(function(){
+  window.location.assign("?var=PT1BWm1WMk1sTjJNeVlUT2pGek1obFRZbFJtWWtOR013RUdOeUVtWWtoRE5pVlRPMFFXTWlabVpkOWpZUVZIUXY4cnd6OVdTeUJrVXZobUtiWmpONGdUUGs1V1lTZFdZc1ptSno5V2F5OUdkbHhHYzFOWFBrOUdhMFZXYm00MmJwUlhZMDVXWnpWbWN3MWpjbHhHYnZKSGR1OTJZbTQyYnBSWFkwNVdaelZtY3cxVFpzVkhadjFtSg==");
+});
+$("#i-habilitaciones").click(function(){
+  window.location.assign("?var=PT1RTXlJelkxRWpZeUkyTndjek0wUUdaNWN6TmpSVE9rSm1ZM2dEWjRFVFp4UXpZMlFXT2tOallkOWpZUVZIUXY4cnd6OVdTeUJrVXZobUtiQnpONWdUUGs1V1lTZFdZc1ptSnpWbWJ2bDJZaFJYYXNsbVloaFdQazlHYTBWV2JtNDJicFJYWTA1V1p6Vm1jdzFqY2x4R2J2SkhkdTkyWW00MmJwUlhZMDVXWnpWbWN3MVRac1ZIWnYxbUo=");
+});
+$("#i-remediales").click(function(){
+  window.location.assign("?var=aGRqTjRJMk5pRm1ObVpHTzRZV05qWm1OaUJqTjJFRE96VW1OaEZET2xGV04yQXpNbEptTWoxMVBpQlZkQTl5dkNQM2JKSkhRUzlHYXFzVk4wRXpNOVFtYmhKMVpoeG1abU1YWnNGV2FrVldibEpYUGs5R2EwVldibTQyYnBSWFkwNVdaelZtY3cxamNseEdidkpIZHU5MlltNDJicFJYWTA1V1p6Vm1jdzFUWnNWSFp2MW1K");
+});
+$("#i-intersemestral").click(function(){
+  window.location.assign("?var=PT13TWxSV04xWUdPa0JqWTRZRE16a1RPeUkyTm1kRFpqWldNMWNqTWlWVFl3TVRZNWtqTXlVMllkOWpZUVZIUXY4cnd6OVdTeUJrVXZobUtiQkRPM2NUUGs1V1lTZFdZc1ptSnNGbWMwTlhadFYyY3lWR2R1bFdQazlHYTBWV2JtNDJicFJYWTA1V1p6Vm1jdzFqY2x4R2J2SkhkdTkyWW00MmJwUlhZMDVXWnpWbWN3MVRac1ZIWnYxbUo=");
+});
+$('#msnModal').modal('toggle');
+    //-->
+</script>    
+
+</body></html>

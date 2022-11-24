@@ -80,7 +80,7 @@ func _ready():
 	print(courses[1].hours)
 	
 	# generate controls
-	genControl(itemContainer)
+	genControls()
 	
 
 
@@ -98,11 +98,8 @@ func _draw():
 	
 	# clear all labels
 	var volconlab: Node2D = $VolatileLabel
-	var volconlabchildren = volconlab.get_children()
-	for i in range(volconlabchildren.size()):
-		var c = volconlabchildren[i]
-		volconlab.remove_child(c)
-		c.queue_free()
+	free_children(volconlab as Node)
+	
 	
 	# dynamic label
 	var mylabel:Label
@@ -182,8 +179,8 @@ func _draw():
 			# day
 			var x1 = xstr + w * hour[0] 
 			# hora
-			var y1 = ystr + ht * ((hour[1] -4.0) / 22.0)
-			var yend = ystr + ht * ((hour[2] -4.0) / 22.0)
+			var y1 = ystr + ht * ((hour[1] -4.0) / ymarks)
+			var yend = ystr + ht * ((hour[2] -4.0) / ymarks)
 		
 			# box
 			draw_rect(Rect2(x1, y1, w, yend - y1), color, true, 2)
@@ -207,7 +204,10 @@ func _draw():
 	# for i in range(courses.size()):
 	
 
-func genControl(con: VBoxContainer):
+func genControls():
+	
+	
+	free_children(itemContainer as Node)
 	
 	var c  # child
 	var cb # checkbox
@@ -223,7 +223,7 @@ func genControl(con: VBoxContainer):
 		cb = c.get_node("HBoxContainer/CheckBox")
 		cb.connect("toggled", self, "checkboxToggleSignal", [i])
 		
-		con.add_child(c)
+		itemContainer.add_child(c)
 		
 func checkboxToggleSignal(buttonPressed, courseId: int):
 	activeCourses[courseId] = buttonPressed
@@ -262,10 +262,33 @@ func data() -> Array:
 	
 func create_class(name: String, nrc: String, hours: Array) -> Course:
 	var c = Course.new()
-	c.name = name
-	c.nrc = nrc
+	c.name  = name
+	c.nrc   = nrc
 	c.hours = hours
 	
 	activeCourses.append(false)
 	return c
 
+func parse_json_to_courses(json: Array):
+	
+	if (!json.size()):
+		return
+		
+	courses = []
+	
+	for c in json:
+		courses.append(create_class(c["name"], c["nrc"], c["hours"]))
+		
+	genControls()
+	
+	
+func free_children(node: Node):
+	
+	var children = node.get_children()
+	for i in range(children.size()):
+		var c = children[i]
+		node.remove_child(c)
+		c.queue_free()
+	
+		
+	

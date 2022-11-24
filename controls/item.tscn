@@ -1,0 +1,24 @@
+[gd_scene format=2]
+
+[node name="PanelContainer" type="PanelContainer"]
+margin_right = 124.0
+margin_bottom = 38.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 117.0
+margin_bottom = 31.0
+
+[node name="CheckBox" type="CheckBox" parent="HBoxContainer"]
+margin_right = 24.0
+margin_bottom = 24.0
+
+[node name="Label" type="Label" parent="HBoxContainer"]
+margin_left = 28.0
+margin_top = 5.0
+margin_right = 110.0
+margin_bottom = 19.0
+text = "This and that"
+
+[node name="Timer" type="Timer" parent="HBoxContainer"]

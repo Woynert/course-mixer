@@ -76,8 +76,10 @@ func formatHours(clnStr string) (int, int) {
 	}
 
 	if (secAmpm == "PM"){
-		secDig += 13
+		secDig += 12
 	}
+
+	secDig++
 
 	fmt.Println(firDig, firAmpm)
 	fmt.Println(secDig, secAmpm)

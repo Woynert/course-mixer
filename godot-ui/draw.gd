@@ -5,11 +5,12 @@ enum DAY{
 	MAR,
 	MIE,
 	JUE,
-	VIE
+	VIE,
+	SAB
 }
 
 const DAYNAME = [
-	"Lun", "Mar", "Mie", "Jue", "Vie"
+	"Lun", "Mar", "Mie", "Jue", "Vie", "Sab"
 ]
 
 const DAYCODE = {
@@ -18,6 +19,7 @@ const DAYCODE = {
 	mie = 2,
 	jue = 3,
 	vie = 4,
+	sab = 5,
 }
 
 # estructura de una hora (array)
@@ -101,9 +103,8 @@ func _draw():
 	wd = bigwd - xstr -4
 	ht = bight - ystr -4
 	
-	var xmarks:float = 5 # 5 days
+	var xmarks:float = 6 # 5 days
 	var ymarks:float = 22 - 4 # start at 4, end at 22
-	var ancho:float = 6
 	
 	# clear all labels
 	var volconlab: Node2D = $VolatileLabel
@@ -292,11 +293,11 @@ func parse_json_to_courses(json: Array):
 		var hours: Array
 		
 		# convert hours
-		for h in c["Hours"]:
-			hours.append([h["Day"], h["Start"], h["End"]])
+		for h in c["hour"]:
+			hours.append([h["day"], h["start"], h["end"]])
 			
 		print(hours)
-		courses.append(create_class(c["Title"], c["Nrc"], hours, c["Level"]))
+		courses.append(create_class(c["title"], c["nrc"], hours, c["level"]))
 		
 	# reset selected courses
 	for i in range(activeCourses.size()):

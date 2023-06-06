@@ -18,35 +18,35 @@ import (
 )
 
 type Query struct {
-	Name string `json:name`	
-	File string `json:file`
-	Cols int `json:cols`
+	Name string `json:"name"`	
+	File string `json:"file"`
+	Cols int `json:"cols"`
 }
 
 type Hour struct {
-	Day   string `json:day`
-	Start int `json:start`
-	End   int `json:end`
+	Day   string `json:"day"`
+	Start int `json:"start"`
+	End   int `json:"end"`
 }
 
 type Course struct {
-	Ctg string `json:ctg`
-	Level string `json:level`
-	Title string `json:title`
-	Nrc   string `json:nrc`
-	Hours []Hour `json:hour`
+	Ctg string `json:"ctg"`
+	Level string `json:"level"`
+	Title string `json:"title"`
+	Nrc   string `json:"nrc"`
+	Hours []Hour `json:"hour"`
 }
+
+// NOTE: Define your queries here
+// Name - Optional
+// File - The html file name inside the datain folder
+// Cols - The amount of columns found
 
 var queries = []Query{
 	{
 		Name: "Sistemas",
 		File: "sistemas.html",
 		Cols: 13,
-	},
-	{
-		Name: "Ciencias Humanistas",
-		File: "humanistas.html",
-		Cols: 12,
 	},
 	{
 		Name: "Electivas",
@@ -233,6 +233,10 @@ func getData(file string, cols int, ctg string) (err error) {
 				case 9:
 					if (strings.TrimSpace(clnStr) != ""){
 						course.Hours = append(course.Hours, createNewHour("vie", clnStr))
+					}
+				case 10:
+					if (strings.TrimSpace(clnStr) != ""){
+						course.Hours = append(course.Hours, createNewHour("sab", clnStr))
 					}
 					if (!skip){
 						course.Ctg = ctg

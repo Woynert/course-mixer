@@ -1,10 +1,10 @@
 # Course Mixer
-A quickly thrown together tool for trying courses schedules. (Linux, Macintosh, Windows)
+A quickly thrown together tool for trying courses schedules (Linux, Macintosh, Windows).
 
 ![image](https://github.com/Woynert/course-mixer/assets/61242172/a0aa3db5-0a5c-4729-ad05-759a09c3cbcf)
 
 ## Requirements
-- Godot 3.5.x
+- Godot 3.5.x ([Get it here](https://godotengine.org/download/3.x))
 - Go
 
 ## Usage (Rough)
@@ -13,11 +13,11 @@ A quickly thrown together tool for trying courses schedules. (Linux, Macintosh, 
     - Place the html file inside the `go-crawler/datain` directory.
     - Repeat this process for as many topics as you want.
 2. Output data:
-    - Edit `go-crawler/main.go` and edit the "queries" variable replacing the **file name (File)** and **column number (Cols)** according to your html.
+    - Edit `go-crawler/main.go` and edit the "queries" variable replacing the **file name (File)** and **column number (Cols)** according to your html files.
     - Run the go program with `go run .`
     - A file called `data.json` should be created under `go-crawler/dataout`.
 3. Graphic interface:
-    - Open Godot 3.5.x and scan the root project directory.
+    - Open Godot 3.5.x and scan this project's root directory.
     - Run the project.
-    - Click the "Import JSON" button and select your `data.json`.
+    - Click the "Import JSON" button at the top and select your `data.json` file.
     - Now you can start course-mixing!

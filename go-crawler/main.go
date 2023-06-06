@@ -75,7 +75,7 @@ func formatHours(clnStr string) (int, int) {
 		firDig += 12
 	}
 
-	if (secAmpm == "PM"){
+	if (secAmpm == "PM" && secDig < 12){
 		secDig += 12
 	}
 

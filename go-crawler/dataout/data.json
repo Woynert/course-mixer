@@ -1,2902 +1,2191 @@
 [
 	{
-		"Ctg": "Sistemas",
-		"Level": "1",
-		"Title": "CÁLCULO DIFERENCIAL",
-		"Nrc": "10113",
-		"Hours": [
-			{
-				"Day": "lun",
-				"Start": 10,
-				"End": 12
-			},
-			{
-				"Day": "mie",
-				"Start": 10,
-				"End": 12
-			}
-		]
-	},
-	{
-		"Ctg": "Sistemas",
-		"Level": "1",
-		"Title": "INTRODUCCIÓN A LA INGENIERÍA DE SISTEMAS E INFORMÁTICA",
-		"Nrc": "10099",
-		"Hours": [
-			{
-				"Day": "lun",
-				"Start": 14,
-				"End": 15
-			},
-			{
-				"Day": "mie",
-				"Start": 14,
-				"End": 16
-			}
-		]
-	},
-	{
-		"Ctg": "Sistemas",
-		"Level": "1",
-		"Title": "HUMANISMO Y CULTURA CIUDADANA",
-		"Nrc": "10159",
-		"Hours": [
-			{
-				"Day": "mar",
-				"Start": 8,
-				"End": 10
-			},
-			{
-				"Day": "jue",
-				"Start": 16,
-				"End": 18
-			}
-		]
-	},
-	{
-		"Ctg": "Sistemas",
-		"Level": "1",
-		"Title": "LÓGICA DE PROGRAMACIÓN - TEORÍA",
-		"Nrc": "10100",
-		"Hours": [
-			{
-				"Day": "mie",
-				"Start": 7,
-				"End": 10
-			}
-		]
-	},
-	{
-		"Ctg": "Sistemas",
-		"Level": "1",
-		"Title": "LÓGICA DE PROGRAMACIÓN - LAB",
-		"Nrc": "10101",
-		"Hours": [
-			{
-				"Day": "mar",
-				"Start": 10,
-				"End": 12
-			}
-		]
-	},
-	{
-		"Ctg": "Sistemas",
-		"Level": "1",
-		"Title": "LÓGICA DE PROGRAMACIÓN - LAB",
-		"Nrc": "10102",
-		"Hours": [
-			{
-				"Day": "jue",
-				"Start": 10,
-				"End": 12
-			}
-		]
-	},
-	{
-		"Ctg": "Sistemas",
-		"Level": "1",
-		"Title": "METODOLOGÍA DE LA INVESTIGACIÓN APLICADA",
-		"Nrc": "10103",
-		"Hours": [
-			{
-				"Day": "lun",
-				"Start": 15,
-				"End": 16
-			},
-			{
-				"Day": "mar",
-				"Start": 16,
-				"End": 18
-			}
-		]
-	},
-	{
-		"Ctg": "Sistemas",
-		"Level": "1",
-		"Title": "PENSAMIENTO SISTÉMICO",
-		"Nrc": "10104",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "1",
+		"title": "CÁLCULO DIFERENCIAL",
+		"nrc": "10061",
+		"hour": [
 			{
-				"Day": "mar",
-				"Start": 14,
-				"End": 16
+				"day": "mie",
+				"start": 8,
+				"end": 10
 			},
 			{
-				"Day": "jue",
-				"Start": 13,
-				"End": 15
+				"day": "vie",
+				"start": 8,
+				"end": 10
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "1",
-		"Title": "CÁLCULO DIFERENCIAL",
-		"Nrc": "10114",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "1",
+		"title": "INTRODUCCIÓN A LA INGENIERÍA DE SISTEMAS E INFORMÁTICA",
+		"nrc": "10062",
+		"hour": [
 			{
-				"Day": "mar",
-				"Start": 14,
-				"End": 16
+				"day": "mie",
+				"start": 10,
+				"end": 11
 			},
 			{
-				"Day": "vie",
-				"Start": 15,
-				"End": 17
+				"day": "jue",
+				"start": 10,
+				"end": 12
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "1",
-		"Title": "INTRODUCCIÓN A LA INGENIERÍA DE SISTEMAS E INFORMÁTICA",
-		"Nrc": "10105",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "1",
+		"title": "HUMANISMO Y CULTURA CIUDADANA",
+		"nrc": "10063",
+		"hour": [
 			{
-				"Day": "mie",
-				"Start": 14,
-				"End": 16
+				"day": "mar",
+				"start": 8,
+				"end": 10
 			},
 			{
-				"Day": "jue",
-				"Start": 14,
-				"End": 15
+				"day": "jue",
+				"start": 8,
+				"end": 10
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "1",
-		"Title": "HUMANISMO Y CULTURA CIUDADANA",
-		"Nrc": "10158",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "1",
+		"title": "LÓGICA DE PROGRAMACIÓN - TEORÍA",
+		"nrc": "10064",
+		"hour": [
 			{
-				"Day": "mar",
-				"Start": 16,
-				"End": 18
+				"day": "mar",
+				"start": 6,
+				"end": 8
 			},
-			{
-				"Day": "mie",
-				"Start": 16,
-				"End": 18
-			}
-		]
-	},
-	{
-		"Ctg": "Sistemas",
-		"Level": "1",
-		"Title": "LÓGICA DE PROGRAMACIÓN - TEORÍA",
-		"Nrc": "10106",
-		"Hours": [
-			{
-				"Day": "mar",
-				"Start": 12,
-				"End": 14
-			},
-			{
-				"Day": "vie",
-				"Start": 12,
-				"End": 25
-			}
-		]
-	},
-	{
-		"Ctg": "Sistemas",
-		"Level": "1",
-		"Title": "LÓGICA DE PROGRAMACIÓN - LAB",
-		"Nrc": "10107",
-		"Hours": [
 			{
-				"Day": "jue",
-				"Start": 12,
-				"End": 14
+				"day": "vie",
+				"start": 6,
+				"end": 7
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "1",
-		"Title": "LÓGICA DE PROGRAMACIÓN - LAB",
-		"Nrc": "10108",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "1",
+		"title": "LÓGICA DE PROGRAMACIÓN - LAB",
+		"nrc": "10065",
+		"hour": [
 			{
-				"Day": "mie",
-				"Start": 12,
-				"End": 14
+				"day": "mie",
+				"start": 12,
+				"end": 14
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "1",
-		"Title": "METODOLOGÍA DE LA INVESTIGACIÓN APLICADA",
-		"Nrc": "10109",
-		"Hours": [
-			{
-				"Day": "mar",
-				"Start": 11,
-				"End": 12
-			},
+		"ctg": "Sistemas",
+		"level": "1",
+		"title": "LÓGICA DE PROGRAMACIÓN - LAB",
+		"nrc": "10066",
+		"hour": [
 			{
-				"Day": "jue",
-				"Start": 8,
-				"End": 10
+				"day": "vie",
+				"start": 12,
+				"end": 14
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "1",
-		"Title": "PENSAMIENTO SISTÉMICO",
-		"Nrc": "10110",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "1",
+		"title": "METODOLOGÍA DE LA INVESTIGACIÓN APLICADA",
+		"nrc": "10067",
+		"hour": [
 			{
-				"Day": "jue",
-				"Start": 15,
-				"End": 17
+				"day": "mar",
+				"start": 12,
+				"end": 14
 			},
 			{
-				"Day": "vie",
-				"Start": 13,
-				"End": 15
+				"day": "jue",
+				"start": 12,
+				"end": 13
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "2",
-		"Title": "CÁLCULO INTEGRAL",
-		"Nrc": "17312",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "1",
+		"title": "PENSAMIENTO SISTÉMICO",
+		"nrc": "10068",
+		"hour": [
 			{
-				"Day": "mar",
-				"Start": 16,
-				"End": 18
+				"day": "mar",
+				"start": 10,
+				"end": 12
 			},
 			{
-				"Day": "jue",
-				"Start": 16,
-				"End": 18
+				"day": "vie",
+				"start": 10,
+				"end": 12
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "2",
-		"Title": "GEOMETRÍA ANALÍTICA",
-		"Nrc": "17682",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "2",
+		"title": "CÁLCULO INTEGRAL",
+		"nrc": "10236",
+		"hour": [
 			{
-				"Day": "mie",
-				"Start": 14,
-				"End": 16
+				"day": "lun",
+				"start": 14,
+				"end": 16
 			},
 			{
-				"Day": "vie",
-				"Start": 14,
-				"End": 16
+				"day": "mie",
+				"start": 10,
+				"end": 12
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "2",
-		"Title": "GEOMETRÍA ANALÍTICA",
-		"Nrc": "17661",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "2",
+		"title": "GEOMETRÍA ANALÍTICA",
+		"nrc": "10240",
+		"hour": [
 			{
-				"Day": "lun",
-				"Start": 12,
-				"End": 14
+				"day": "mie",
+				"start": 16,
+				"end": 18
 			},
-			{
-				"Day": "mie",
-				"Start": 10,
-				"End": 12
-			}
-		]
-	},
-	{
-		"Ctg": "Sistemas",
-		"Level": "2",
-		"Title": "ANÁLISIS Y DISEÑO DE SISTEMAS - TEORÍA",
-		"Nrc": "17388",
-		"Hours": [
-			{
-				"Day": "lun",
-				"Start": 6,
-				"End": 8
-			}
-		]
-	},
-	{
-		"Ctg": "Sistemas",
-		"Level": "2",
-		"Title": "DISEÑO DE EXPERIENCIA DE USUARIO - TEORÍA",
-		"Nrc": "16903",
-		"Hours": [
 			{
-				"Day": "lun",
-				"Start": 10,
-				"End": 12
+				"day": "vie",
+				"start": 14,
+				"end": 16
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "2",
-		"Title": "PARADIGMAS DE PROGRAMACIÓN - TEORÍA",
-		"Nrc": "17417",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "2",
+		"title": "ANÁLISIS Y DISEÑO DE SISTEMAS - TEORÍA",
+		"nrc": "10322",
+		"hour": [
 			{
-				"Day": "lun",
-				"Start": 8,
-				"End": 10
+				"day": "lun",
+				"start": 12,
+				"end": 14
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "2",
-		"Title": "ANÁLISIS Y DISEÑO DE SISTEMAS - LAB",
-		"Nrc": "17387",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "2",
+		"title": "DISEÑO DE EXPERIENCIA DE USUARIO - TEORÍA",
+		"nrc": "10325",
+		"hour": [
 			{
-				"Day": "mie",
-				"Start": 6,
-				"End": 8
+				"day": "mar",
+				"start": 14,
+				"end": 16
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "2",
-		"Title": "ANÁLISIS Y DISEÑO DE SISTEMAS - LAB",
-		"Nrc": "17389",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "2",
+		"title": "PARADIGMAS DE PROGRAMACIÓN - TEORÍA",
+		"nrc": "10328",
+		"hour": [
 			{
-				"Day": "mar",
-				"Start": 6,
-				"End": 8
+				"day": "mar",
+				"start": 16,
+				"end": 18
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "2",
-		"Title": "DISEÑO DE EXPERIENCIA DE USUARIO-LAB.",
-		"Nrc": "16904",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "2",
+		"title": "ANÁLISIS Y DISEÑO DE SISTEMAS - LAB",
+		"nrc": "10323",
+		"hour": [
 			{
-				"Day": "mie",
-				"Start": 8,
-				"End": 10
+				"day": "mar",
+				"start": 12,
+				"end": 14
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "2",
-		"Title": "DISEÑO DE EXPERIENCIA DE USUARIO-LAB.",
-		"Nrc": "16905",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "2",
+		"title": "ANÁLISIS Y DISEÑO DE SISTEMAS - LAB",
+		"nrc": "10324",
+		"hour": [
 			{
-				"Day": "mar",
-				"Start": 8,
-				"End": 10
+				"day": "jue",
+				"start": 18,
+				"end": 20
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "2",
-		"Title": "PARADIGMAS DE PROGRAMACIÓN - LAB",
-		"Nrc": "17416",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "2",
+		"title": "DISEÑO DE EXPERIENCIA DE USUARIO-LAB.",
+		"nrc": "10326",
+		"hour": [
 			{
-				"Day": "jue",
-				"Start": 14,
-				"End": 16
+				"day": "mie",
+				"start": 14,
+				"end": 16
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "2",
-		"Title": "PARADIGMAS DE PROGRAMACIÓN - LAB",
-		"Nrc": "17418",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "2",
+		"title": "DISEÑO DE EXPERIENCIA DE USUARIO-LAB.",
+		"nrc": "10327",
+		"hour": [
 			{
-				"Day": "mar",
-				"Start": 14,
-				"End": 16
+				"day": "jue",
+				"start": 14,
+				"end": 16
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "3",
-		"Title": "ÁLGEBRA LINEAL",
-		"Nrc": "17375",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "2",
+		"title": "PARADIGMAS DE PROGRAMACIÓN - LAB",
+		"nrc": "10329",
+		"hour": [
 			{
-				"Day": "mar",
-				"Start": 16,
-				"End": 18
-			},
-			{
-				"Day": "jue",
-				"Start": 16,
-				"End": 18
+				"day": "jue",
+				"start": 16,
+				"end": 18
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "3",
-		"Title": "CÁLCULO MULTIVARIABLE",
-		"Nrc": "17737",
-		"Hours": [
-			{
-				"Day": "lun",
-				"Start": 12,
-				"End": 14
-			},
+		"ctg": "Sistemas",
+		"level": "2",
+		"title": "PARADIGMAS DE PROGRAMACIÓN - LAB",
+		"nrc": "10330",
+		"hour": [
 			{
-				"Day": "mie",
-				"Start": 12,
-				"End": 14
+				"day": "vie",
+				"start": 16,
+				"end": 18
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "3",
-		"Title": "MECÁNICA - TEORÍA",
-		"Nrc": "17035",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "2",
+		"title": "CÁLCULO INTEGRAL",
+		"nrc": "10237",
+		"hour": [
 			{
-				"Day": "lun",
-				"Start": 17,
-				"End": 18
+				"day": "mar",
+				"start": 10,
+				"end": 12
 			},
-			{
-				"Day": "mie",
-				"Start": 16,
-				"End": 18
-			}
-		]
-	},
-	{
-		"Ctg": "Sistemas",
-		"Level": "3",
-		"Title": "ESTRUCTURAS DE DATOS - TEORÍA",
-		"Nrc": "17390",
-		"Hours": [
 			{
-				"Day": "mie",
-				"Start": 14,
-				"End": 16
+				"day": "jue",
+				"start": 10,
+				"end": 12
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "3",
-		"Title": "MATEMÁTICAS DISCRETAS - TEORÍA",
-		"Nrc": "17295",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "2",
+		"title": "GEOMETRÍA ANALÍTICA",
+		"nrc": "10241",
+		"hour": [
 			{
-				"Day": "lun",
-				"Start": 18,
-				"End": 20
+				"day": "mie",
+				"start": 10,
+				"end": 12
 			},
-			{
-				"Day": "mie",
-				"Start": 18,
-				"End": 19
-			}
-		]
-	},
-	{
-		"Ctg": "Sistemas",
-		"Level": "3",
-		"Title": "MECÁNICA - LAB.",
-		"Nrc": "17033",
-		"Hours": [
-			{
-				"Day": "mar",
-				"Start": 14,
-				"End": 16
-			}
-		]
-	},
-	{
-		"Ctg": "Sistemas",
-		"Level": "3",
-		"Title": "MECÁNICA - LAB.",
-		"Nrc": "17034",
-		"Hours": [
-			{
-				"Day": "jue",
-				"Start": 10,
-				"End": 12
-			}
-		]
-	},
-	{
-		"Ctg": "Sistemas",
-		"Level": "3",
-		"Title": "ESTRUCTURAS DE DATOS - LAB.",
-		"Nrc": "17391",
-		"Hours": [
-			{
-				"Day": "lun",
-				"Start": 14,
-				"End": 16
-			}
-		]
-	},
-	{
-		"Ctg": "Sistemas",
-		"Level": "3",
-		"Title": "ESTRUCTURAS DE DATOS - LAB.",
-		"Nrc": "17394",
-		"Hours": [
 			{
-				"Day": "jue",
-				"Start": 14,
-				"End": 16
+				"day": "vie",
+				"start": 10,
+				"end": 12
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "3",
-		"Title": "MATEMÁTICAS DISCRETAS - LAB",
-		"Nrc": "17297",
-		"Hours": []
-	},
-	{
-		"Ctg": "Sistemas",
-		"Level": "3",
-		"Title": "MATEMÁTICAS DISCRETAS - LAB",
-		"Nrc": "17293",
-		"Hours": []
-	},
-	{
-		"Ctg": "Sistemas",
-		"Level": "3",
-		"Title": "ÁLGEBRA LINEAL",
-		"Nrc": "17627",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "2",
+		"title": "ANÁLISIS Y DISEÑO DE SISTEMAS - TEORÍA",
+		"nrc": "10331",
+		"hour": [
 			{
-				"Day": "mie",
-				"Start": 8,
-				"End": 10
-			},
-			{
-				"Day": "vie",
-				"Start": 8,
-				"End": 10
+				"day": "lun",
+				"start": 6,
+				"end": 8
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "3",
-		"Title": "CÁLCULO MULTIVARIABLE",
-		"Nrc": "17737",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "2",
+		"title": "DISEÑO DE EXPERIENCIA DE USUARIO - TEORÍA",
+		"nrc": "10334",
+		"hour": [
 			{
-				"Day": "lun",
-				"Start": 12,
-				"End": 14
-			},
-			{
-				"Day": "mie",
-				"Start": 12,
-				"End": 14
+				"day": "mar",
+				"start": 8,
+				"end": 10
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "3",
-		"Title": "MECÁNICA - TEORÍA",
-		"Nrc": "17461",
-		"Hours": [
-			{
-				"Day": "lun",
-				"Start": 16,
-				"End": 17
-			},
+		"ctg": "Sistemas",
+		"level": "2",
+		"title": "PARADIGMAS DE PROGRAMACIÓN - TEORÍA",
+		"nrc": "10337",
+		"hour": [
 			{
-				"Day": "mar",
-				"Start": 10,
-				"End": 12
+				"day": "mar",
+				"start": 6,
+				"end": 8
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "3",
-		"Title": "ESTRUCTURAS DE DATOS - TEORÍA",
-		"Nrc": "17392",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "2",
+		"title": "ANÁLISIS Y DISEÑO DE SISTEMAS - LAB",
+		"nrc": "10332",
+		"hour": [
 			{
-				"Day": "mar",
-				"Start": 12,
-				"End": 14
+				"day": "mie",
+				"start": 6,
+				"end": 8
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "3",
-		"Title": "MATEMÁTICAS DISCRETAS - TEORÍA",
-		"Nrc": "17294",
-		"Hours": [
-			{
-				"Day": "mie",
-				"Start": 10,
-				"End": 12
-			},
+		"ctg": "Sistemas",
+		"level": "2",
+		"title": "ANÁLISIS Y DISEÑO DE SISTEMAS - LAB",
+		"nrc": "10333",
+		"hour": [
 			{
-				"Day": "vie",
-				"Start": 10,
-				"End": 11
+				"day": "jue",
+				"start": 12,
+				"end": 14
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "3",
-		"Title": "MECÁNICA - LAB.",
-		"Nrc": "17459",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "2",
+		"title": "DISEÑO DE EXPERIENCIA DE USUARIO-LAB.",
+		"nrc": "10335",
+		"hour": [
 			{
-				"Day": "jue",
-				"Start": 10,
-				"End": 12
+				"day": "mie",
+				"start": 8,
+				"end": 10
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "3",
-		"Title": "MECÁNICA - LAB.",
-		"Nrc": "17460",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "2",
+		"title": "DISEÑO DE EXPERIENCIA DE USUARIO-LAB.",
+		"nrc": "10336",
+		"hour": [
 			{
-				"Day": "jue",
-				"Start": 8,
-				"End": 10
+				"day": "jue",
+				"start": 8,
+				"end": 10
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "3",
-		"Title": "ESTRUCTURAS DE DATOS - LAB.",
-		"Nrc": "17393",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "2",
+		"title": "PARADIGMAS DE PROGRAMACIÓN - LAB",
+		"nrc": "10338",
+		"hour": [
 			{
-				"Day": "mie",
-				"Start": 14,
-				"End": 16
+				"day": "vie",
+				"start": 8,
+				"end": 10
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "3",
-		"Title": "MATEMÁTICAS DISCRETAS - LAB",
-		"Nrc": "17296",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "2",
+		"title": "PARADIGMAS DE PROGRAMACIÓN - LAB",
+		"nrc": "10339",
+		"hour": [
 			{
-				"Day": "lun",
-				"Start": 14,
-				"End": 16
+				"day": "vie",
+				"start": 6,
+				"end": 8
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "4",
-		"Title": "ECUACIONES DIFERENCIALES",
-		"Nrc": "17207",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "3",
+		"title": "ÁLGEBRA LINEAL",
+		"nrc": "10258",
+		"hour": [
 			{
-				"Day": "mar",
-				"Start": 18,
-				"End": 20
+				"day": "mie",
+				"start": 10,
+				"end": 12
 			},
 			{
-				"Day": "jue",
-				"Start": 18,
-				"End": 20
+				"day": "vie",
+				"start": 10,
+				"end": 12
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "4",
-		"Title": "ECUACIONES DIFERENCIALES",
-		"Nrc": "17485",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "3",
+		"title": "CÁLCULO MULTIVARIABLE",
+		"nrc": "10303",
+		"hour": [
 			{
-				"Day": "mar",
-				"Start": 12,
-				"End": 14
+				"day": "mar",
+				"start": 10,
+				"end": 12
 			},
-			{
-				"Day": "jue",
-				"Start": 10,
-				"End": 12
-			}
-		]
-	},
-	{
-		"Ctg": "Sistemas",
-		"Level": "4",
-		"Title": "ANÁLISIS Y DISEÑO DE ALGORITMOS - TEORÍA",
-		"Nrc": "17473",
-		"Hours": [
 			{
-				"Day": "mie",
-				"Start": 14,
-				"End": 16
+				"day": "jue",
+				"start": 10,
+				"end": 12
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "4",
-		"Title": "BASES DE DATOS - TEORÍA",
-		"Nrc": "16983",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "3",
+		"title": "MECÁNICA - TEORÍA",
+		"nrc": "10249",
+		"hour": [
 			{
-				"Day": "jue",
-				"Start": 12,
-				"End": 14
-			}
-		]
-	},
-	{
-		"Ctg": "Sistemas",
-		"Level": "4",
-		"Title": "ESTADÍSTICA DESCRIPTIVA E INFERENCIAL",
-		"Nrc": "18137",
-		"Hours": [
-			{
-				"Day": "lun",
-				"Start": 9,
-				"End": 12
+				"day": "lun",
+				"start": 17,
+				"end": 18
 			},
-			{
-				"Day": "mar",
-				"Start": 10,
-				"End": 12
-			}
-		]
-	},
-	{
-		"Ctg": "Sistemas",
-		"Level": "4",
-		"Title": "INGENIERÍA DE SOFTWARE - TEORÍA",
-		"Nrc": "17241",
-		"Hours": [
-			{
-				"Day": "jue",
-				"Start": 8,
-				"End": 10
-			}
-		]
-	},
-	{
-		"Ctg": "Sistemas",
-		"Level": "4",
-		"Title": "SISTEMAS OPERATIVOS - TEORÍA",
-		"Nrc": "17586",
-		"Hours": [
-			{
-				"Day": "vie",
-				"Start": 16,
-				"End": 18
-			}
-		]
-	},
-	{
-		"Ctg": "Sistemas",
-		"Level": "4",
-		"Title": "ANÁLISIS Y DISEÑO DE ALGORITMOS - LAB.",
-		"Nrc": "17474",
-		"Hours": [
-			{
-				"Day": "vie",
-				"Start": 14,
-				"End": 16
-			}
-		]
-	},
-	{
-		"Ctg": "Sistemas",
-		"Level": "4",
-		"Title": "ANÁLISIS Y DISEÑO DE ALGORITMOS - LAB.",
-		"Nrc": "17475",
-		"Hours": [
-			{
-				"Day": "jue",
-				"Start": 14,
-				"End": 16
-			}
-		]
-	},
-	{
-		"Ctg": "Sistemas",
-		"Level": "4",
-		"Title": "BASES DE DATOS - LAB",
-		"Nrc": "16982",
-		"Hours": [
 			{
-				"Day": "vie",
-				"Start": 12,
-				"End": 14
+				"day": "mie",
+				"start": 14,
+				"end": 16
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "4",
-		"Title": "BASES DE DATOS - LAB",
-		"Nrc": "16984",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "3",
+		"title": "ESTRUCTURAS DE DATOS - TEORÍA",
+		"nrc": "10340",
+		"hour": [
 			{
-				"Day": "mie",
-				"Start": 12,
-				"End": 14
+				"day": "mar",
+				"start": 14,
+				"end": 16
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "4",
-		"Title": "INGENIERÍA DE SOFTWARE - LAB",
-		"Nrc": "17240",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "3",
+		"title": "MATEMÁTICAS DISCRETAS - TEORÍA",
+		"nrc": "10343",
+		"hour": [
 			{
-				"Day": "mar",
-				"Start": 8,
-				"End": 10
+				"day": "mar",
+				"start": 17,
+				"end": 20
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "4",
-		"Title": "INGENIERÍA DE SOFTWARE - LAB",
-		"Nrc": "17242",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "3",
+		"title": "MECÁNICA - LAB.",
+		"nrc": "10250",
+		"hour": [
 			{
-				"Day": "vie",
-				"Start": 10,
-				"End": 12
+				"day": "vie",
+				"start": 14,
+				"end": 16
 			}
 		]
-	},
-	{
-		"Ctg": "Sistemas",
-		"Level": "4",
-		"Title": "SISTEMAS OPERATIVOS - LAB.",
-		"Nrc": "17584",
-		"Hours": []
-	},
-	{
-		"Ctg": "Sistemas",
-		"Level": "4",
-		"Title": "SISTEMAS OPERATIVOS - LAB.",
-		"Nrc": "17585",
-		"Hours": []
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "5",
-		"Title": "ADMINISTRACIÓN DE BASES DE DATOS - TEORÍA",
-		"Nrc": "17304",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "3",
+		"title": "MECÁNICA - LAB.",
+		"nrc": "10251",
+		"hour": [
 			{
-				"Day": "lun",
-				"Start": 6,
-				"End": 8
+				"day": "vie",
+				"start": 16,
+				"end": 18
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "5",
-		"Title": "ANÁLISIS NUMÉRICO - TEORÍA",
-		"Nrc": "17175",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "3",
+		"title": "ESTRUCTURAS DE DATOS - LAB.",
+		"nrc": "10341",
+		"hour": [
 			{
-				"Day": "jue",
-				"Start": 10,
-				"End": 12
+				"day": "mie",
+				"start": 16,
+				"end": 18
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "5",
-		"Title": "CRIPTOGRAFÍA Y SEGURIDAD DE LA INFORMACIÓN - TEORÍA",
-		"Nrc": "16954",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "3",
+		"title": "ESTRUCTURAS DE DATOS - LAB.",
+		"nrc": "10342",
+		"hour": [
 			{
-				"Day": "mie",
-				"Start": 8,
-				"End": 10
+				"day": "jue",
+				"start": 14,
+				"end": 16
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "5",
-		"Title": "GERENCIA DE PROYECTOS TECNOLÓGICOS",
-		"Nrc": "17017",
-		"Hours": [
-			{
-				"Day": "mar",
-				"Start": 6,
-				"End": 7
-			},
-			{
-				"Day": "jue",
-				"Start": 6,
-				"End": 8
-			},
+		"ctg": "Sistemas",
+		"level": "3",
+		"title": "MATEMÁTICAS DISCRETAS - LAB",
+		"nrc": "10346",
+		"hour": [
 			{
-				"Day": "vie",
-				"Start": 6,
-				"End": 8
+				"day": "jue",
+				"start": 18,
+				"end": 20
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "5",
-		"Title": "PROYECTO INTEGRADOR 1",
-		"Nrc": "16927",
-		"Hours": [
-			{
-				"Day": "lun",
-				"Start": 16,
-				"End": 17
-			},
+		"ctg": "Sistemas",
+		"level": "3",
+		"title": "MATEMÁTICAS DISCRETAS - LAB",
+		"nrc": "10348",
+		"hour": [
 			{
-				"Day": "vie",
-				"Start": 8,
-				"End": 10
+				"day": "lun",
+				"start": 18,
+				"end": 20
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "5",
-		"Title": "REDES DE DATOS -TEORÍA",
-		"Nrc": "17180",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "4",
+		"title": "ECUACIONES DIFERENCIALES",
+		"nrc": "10316",
+		"hour": [
 			{
-				"Day": "mie",
-				"Start": 10,
-				"End": 12
+				"day": "mar",
+				"start": 14,
+				"end": 16
 			},
-			{
-				"Day": "vie",
-				"Start": 11,
-				"End": 12
-			}
-		]
-	},
-	{
-		"Ctg": "Sistemas",
-		"Level": "5",
-		"Title": "ADMINISTRACIÓN DE BASES DE DATOS - LAB",
-		"Nrc": "17305",
-		"Hours": [
-			{
-				"Day": "mie",
-				"Start": 6,
-				"End": 8
-			}
-		]
-	},
-	{
-		"Ctg": "Sistemas",
-		"Level": "5",
-		"Title": "ADMINISTRACIÓN DE BASES DE DATOS - LAB",
-		"Nrc": "17306",
-		"Hours": [
-			{
-				"Day": "mar",
-				"Start": 8,
-				"End": 10
-			}
-		]
-	},
-	{
-		"Ctg": "Sistemas",
-		"Level": "5",
-		"Title": "ANÁLISIS NUMÉRICO - LAB",
-		"Nrc": "17173",
-		"Hours": [
 			{
-				"Day": "mar",
-				"Start": 16,
-				"End": 18
+				"day": "jue",
+				"start": 14,
+				"end": 16
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "5",
-		"Title": "ANÁLISIS NUMÉRICO - LAB",
-		"Nrc": "17174",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "4",
+		"title": "ANÁLISIS Y DISEÑO DE ALGORITMOS - TEORÍA",
+		"nrc": "10358",
+		"hour": [
 			{
-				"Day": "mie",
-				"Start": 14,
-				"End": 16
+				"day": "vie",
+				"start": 10,
+				"end": 12
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "5",
-		"Title": "CRIPTOGRAFÍA Y SEGURIDAD DE LA INFORMACIÓN - LAB",
-		"Nrc": "16955",
-		"Hours": [
-			{
-				"Day": "lun",
-				"Start": 14,
-				"End": 15
-			},
+		"ctg": "Sistemas",
+		"level": "4",
+		"title": "BASES DE DATOS - TEORÍA",
+		"nrc": "10369",
+		"hour": [
 			{
-				"Day": "vie",
-				"Start": 14,
-				"End": 16
+				"day": "lun",
+				"start": 8,
+				"end": 10
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "5",
-		"Title": "CRIPTOGRAFÍA Y SEGURIDAD DE LA INFORMACIÓN - LAB",
-		"Nrc": "16956",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "4",
+		"title": "ESTADÍSTICA DESCRIPTIVA E INFERENCIAL",
+		"nrc": "10374",
+		"hour": [
 			{
-				"Day": "lun",
-				"Start": 15,
-				"End": 16
+				"day": "lun",
+				"start": 10,
+				"end": 12
 			},
 			{
-				"Day": "mar",
-				"Start": 10,
-				"End": 12
+				"day": "mie",
+				"start": 8,
+				"end": 11
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "5",
-		"Title": "REDES DE DATOS - LAB",
-		"Nrc": "17178",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "4",
+		"title": "INGENIERÍA DE SOFTWARE - TEORÍA",
+		"nrc": "10376",
+		"hour": [
 			{
-				"Day": "mar",
-				"Start": 14,
-				"End": 16
+				"day": "mar",
+				"start": 10,
+				"end": 12
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "5",
-		"Title": "REDES DE DATOS - LAB",
-		"Nrc": "17179",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "4",
+		"title": "SISTEMAS OPERATIVOS - TEORÍA",
+		"nrc": "10381",
+		"hour": [
 			{
-				"Day": "jue",
-				"Start": 8,
-				"End": 10
+				"day": "lun",
+				"start": 14,
+				"end": 16
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "6",
-		"Title": "DESARROLLO DE APLICACIONES WEB - TEO",
-		"Nrc": "17489",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "4",
+		"title": "ANÁLISIS Y DISEÑO DE ALGORITMOS - LAB.",
+		"nrc": "10360",
+		"hour": [
 			{
-				"Day": "jue",
-				"Start": 16,
-				"End": 18
+				"day": "mar",
+				"start": 8,
+				"end": 10
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "6",
-		"Title": "DISEÑO Y GESTIÓN DE INFRAESTRUCTURAS TECNOLÓGICAS - TEO",
-		"Nrc": "16942",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "4",
+		"title": "ANÁLISIS Y DISEÑO DE ALGORITMOS - LAB.",
+		"nrc": "10361",
+		"hour": [
 			{
-				"Day": "jue",
-				"Start": 18,
-				"End": 20
+				"day": "jue",
+				"start": 16,
+				"end": 18
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "6",
-		"Title": "GESTIÓN DE TECNOLOGÍAS DE INFORMACIÓN",
-		"Nrc": "16979",
-		"Hours": [
-			{
-				"Day": "lun",
-				"Start": 6,
-				"End": 8
-			},
+		"ctg": "Sistemas",
+		"level": "4",
+		"title": "BASES DE DATOS - LAB",
+		"nrc": "10370",
+		"hour": [
 			{
-				"Day": "mie",
-				"Start": 18,
-				"End": 20
+				"day": "mar",
+				"start": 6,
+				"end": 8
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "6",
-		"Title": "PROYECTO INTEGRADOR 2",
-		"Nrc": "17603",
-		"Hours": [
-			{
-				"Day": "mar",
-				"Start": 8,
-				"End": 10
-			},
+		"ctg": "Sistemas",
+		"level": "4",
+		"title": "BASES DE DATOS - LAB",
+		"nrc": "10371",
+		"hour": [
 			{
-				"Day": "jue",
-				"Start": 8,
-				"End": 9
+				"day": "jue",
+				"start": 6,
+				"end": 8
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "6",
-		"Title": "DESARROLLO DE APLICACIONES WEB - LAB",
-		"Nrc": "17490",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "4",
+		"title": "INGENIERÍA DE SOFTWARE - LAB",
+		"nrc": "10377",
+		"hour": [
 			{
-				"Day": "mie",
-				"Start": 16,
-				"End": 18
+				"day": "jue",
+				"start": 8,
+				"end": 10
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "6",
-		"Title": "DESARROLLO DE APLICACIONES WEB - LAB",
-		"Nrc": "17491",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "4",
+		"title": "INGENIERÍA DE SOFTWARE - LAB",
+		"nrc": "10378",
+		"hour": [
 			{
-				"Day": "lun",
-				"Start": 16,
-				"End": 18
+				"day": "jue",
+				"start": 10,
+				"end": 12
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "6",
-		"Title": "DISEÑO Y GESTIÓN DE INFRAESTRUCTURAS TECNOLÓGICAS - LAB",
-		"Nrc": "16941",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "4",
+		"title": "SISTEMAS OPERATIVOS - LAB.",
+		"nrc": "10382",
+		"hour": [
 			{
-				"Day": "lun",
-				"Start": 18,
-				"End": 20
+				"day": "mie",
+				"start": 14,
+				"end": 16
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "7",
-		"Title": "ASEGURAMIENTO DE INFRAESTRUCTURAS TECNOLOGICAS - TEO",
-		"Nrc": "16910",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "4",
+		"title": "SISTEMAS OPERATIVOS - LAB.",
+		"nrc": "10383",
+		"hour": [
 			{
-				"Day": "mie",
-				"Start": 18,
-				"End": 20
+				"day": "mie",
+				"start": 16,
+				"end": 18
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "7",
-		"Title": "DERECHO INFORMATICO (VIRTUAL)",
-		"Nrc": "18132",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "4",
+		"title": "ECUACIONES DIFERENCIALES",
+		"nrc": "10316",
+		"hour": [
 			{
-				"Day": "lun",
-				"Start": 19,
-				"End": 21
+				"day": "mar",
+				"start": 14,
+				"end": 16
 			},
 			{
-				"Day": "jue",
-				"Start": 19,
-				"End": 21
+				"day": "jue",
+				"start": 14,
+				"end": 16
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "7",
-		"Title": "DESARROLLO DE APLICACIONES MÓVILES - TEO",
-		"Nrc": "17282",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "4",
+		"title": "ANÁLISIS Y DISEÑO DE ALGORITMOS - TEORÍA",
+		"nrc": "10364",
+		"hour": [
 			{
-				"Day": "lun",
-				"Start": 10,
-				"End": 12
+				"day": "lun",
+				"start": 16,
+				"end": 18
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "7",
-		"Title": "PROYECTO INTEGRADOR 3",
-		"Nrc": "18131",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "4",
+		"title": "BASES DE DATOS - TEORÍA",
+		"nrc": "10372",
+		"hour": [
 			{
-				"Day": "lun",
-				"Start": 14,
-				"End": 15
-			},
-			{
-				"Day": "mie",
-				"Start": 14,
-				"End": 16
-			}
-		]
-	},
-	{
-		"Ctg": "Sistemas",
-		"Level": "7",
-		"Title": "ASEGURAMIENTO DE INFRAESTRUCTURAS TECNOLOGICAS - LAB.",
-		"Nrc": "16908",
-		"Hours": [
-			{
-				"Day": "mar",
-				"Start": 18,
-				"End": 20
+				"day": "lun",
+				"start": 12,
+				"end": 14
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "7",
-		"Title": "ASEGURAMIENTO DE INFRAESTRUCTURAS TECNOLOGICAS - LAB.",
-		"Nrc": "16909",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "4",
+		"title": "ESTADÍSTICA DESCRIPTIVA E INFERENCIAL",
+		"nrc": "10375",
+		"hour": [
 			{
-				"Day": "vie",
-				"Start": 18,
-				"End": 20
-			}
-		]
-	},
-	{
-		"Ctg": "Sistemas",
-		"Level": "7",
-		"Title": "DESARROLLO DE APLICACIONES MÓVILES - LAB",
-		"Nrc": "17281",
-		"Hours": [
+				"day": "lun",
+				"start": 14,
+				"end": 16
+			},
 			{
-				"Day": "mie",
-				"Start": 16,
-				"End": 18
+				"day": "mie",
+				"start": 14,
+				"end": 17
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "7",
-		"Title": "DESARROLLO DE APLICACIONES MÓVILES - LAB",
-		"Nrc": "17283",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "4",
+		"title": "INGENIERÍA DE SOFTWARE - TEORÍA",
+		"nrc": "10379",
+		"hour": [
 			{
-				"Day": "mar",
-				"Start": 16,
-				"End": 18
+				"day": "jue",
+				"start": 16,
+				"end": 18
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "9",
-		"Title": "DERECHO INFORMATICO",
-		"Nrc": "18133",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "4",
+		"title": "SISTEMAS OPERATIVOS - TEORÍA",
+		"nrc": "10384",
+		"hour": [
 			{
-				"Day": "vie",
-				"Start": 6,
-				"End": 9
+				"day": "lun",
+				"start": 18,
+				"end": 20
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "9",
-		"Title": "SISTEMAS DISTRIBUIDOS - TEORÍA",
-		"Nrc": "16964",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "4",
+		"title": "ANÁLISIS Y DISEÑO DE ALGORITMOS - LAB.",
+		"nrc": "10365",
+		"hour": [
 			{
-				"Day": "mie",
-				"Start": 10,
-				"End": 12
+				"day": "mar",
+				"start": 16,
+				"end": 18
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "9",
-		"Title": "TRABAJO DE GRADO I",
-		"Nrc": "17734",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "4",
+		"title": "BASES DE DATOS - LAB",
+		"nrc": "10373",
+		"hour": [
 			{
-				"Day": "mie",
-				"Start": 8,
-				"End": 10
+				"day": "mie",
+				"start": 12,
+				"end": 14
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "9",
-		"Title": "TEORÍA DE LA NEGOCIACIÓN",
-		"Nrc": "17379",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "4",
+		"title": "INGENIERÍA DE SOFTWARE - LAB",
+		"nrc": "10380",
+		"hour": [
 			{
-				"Day": "mar",
-				"Start": 7,
-				"End": 8
+				"day": "vie",
+				"start": 16,
+				"end": 18
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "9",
-		"Title": "SISTEMAS DISTRIBUIDOS - LAB",
-		"Nrc": "16963",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "4",
+		"title": "SISTEMAS OPERATIVOS - LAB.",
+		"nrc": "10385",
+		"hour": [
 			{
-				"Day": "mar",
-				"Start": 10,
-				"End": 12
+				"day": "mar",
+				"start": 18,
+				"end": 20
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "10",
-		"Title": "TRABAJO DE GRADO II",
-		"Nrc": "17477",
-		"Hours": []
-	},
-	{
-		"Ctg": "Sistemas",
-		"Level": "6",
-		"Title": "OPTATIVA I: Fundamentos de Inteligencia Artíficial - TEO",
-		"Nrc": "17687",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "5",
+		"title": "ADMINISTRACIÓN DE BASES DE DATOS - TEORÍA",
+		"nrc": "10386",
+		"hour": [
 			{
-				"Day": "jue",
-				"Start": 6,
-				"End": 8
+				"day": "mar",
+				"start": 14,
+				"end": 16
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "7",
-		"Title": "OPTATIVA I - Analítica de Datos - TEO",
-		"Nrc": "17664",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "5",
+		"title": "ANÁLISIS NUMÉRICO - TEORÍA",
+		"nrc": "10320",
+		"hour": [
 			{
-				"Day": "lun",
-				"Start": 6,
-				"End": 8
+				"day": "mar",
+				"start": 10,
+				"end": 12
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "9",
-		"Title": "OPTATIVA III ASEGURAMIENTO CALIDAD DE SOFTWARE - TEO",
-		"Nrc": "17645",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "5",
+		"title": "CRIPTOGRAFÍA Y SEGURIDAD DE LA INFORMACIÓN - TEORÍA",
+		"nrc": "10390",
+		"hour": [
 			{
-				"Day": "jue",
-				"Start": 8,
-				"End": 10
+				"day": "mar",
+				"start": 8,
+				"end": 10
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "9",
-		"Title": "OPTATIVA IV: DESARROLLO DE VÍDEO JUEGOS TEO",
-		"Nrc": "17108",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "5",
+		"title": "GERENCIA DE PROYECTOS TECNOLÓGICOS",
+		"nrc": "10393",
+		"hour": [
 			{
-				"Day": "lun",
-				"Start": 8,
-				"End": 10
-			}
-		]
-	},
-	{
-		"Ctg": "Sistemas",
-		"Level": "6",
-		"Title": "OPTATIVA I: Fundamentos de Inteligencia Artíficial - LAB",
-		"Nrc": "17686",
-		"Hours": [
+				"day": "jue",
+				"start": 6,
+				"end": 8
+			},
 			{
-				"Day": "mar",
-				"Start": 6,
-				"End": 8
+				"day": "sab",
+				"start": 8,
+				"end": 11
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "7",
-		"Title": "OPTATIVA I - Analítica de Datos - LAB",
-		"Nrc": "17662",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "5",
+		"title": "PROYECTO INTEGRADOR 1",
+		"nrc": "10394",
+		"hour": [
 			{
-				"Day": "vie",
-				"Start": 6,
-				"End": 8
+				"day": "mie",
+				"start": 7,
+				"end": 10
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "7",
-		"Title": "OPTATIVA I - Analítica de Datos - LAB",
-		"Nrc": "17663",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "5",
+		"title": "REDES DE DATOS -TEORÍA",
+		"nrc": "10395",
+		"hour": [
 			{
-				"Day": "mie",
-				"Start": 6,
-				"End": 8
+				"day": "mar",
+				"start": 16,
+				"end": 19
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "9",
-		"Title": "OPTATIVA III ASEGURAMIENTO CALIDAD DE SOFTWARE - LAB",
-		"Nrc": "17644",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "5",
+		"title": "ADMINISTRACIÓN DE BASES DE DATOS - LAB",
+		"nrc": "10387",
+		"hour": [
 			{
-				"Day": "mar",
-				"Start": 14,
-				"End": 16
+				"day": "vie",
+				"start": 6,
+				"end": 8
 			}
 		]
 	},
 	{
-		"Ctg": "Sistemas",
-		"Level": "9",
-		"Title": "OPTATIVA IV: DESARROLLO DE VÍDEO JUEGOS LAB",
-		"Nrc": "17109",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "5",
+		"title": "ADMINISTRACIÓN DE BASES DE DATOS - LAB",
+		"nrc": "10388",
+		"hour": [
 			{
-				"Day": "mar",
-				"Start": 8,
-				"End": 10
+				"day": "vie",
+				"start": 12,
+				"end": 14
 			}
 		]
-	},
-	{
-		"Ctg": "Ciencias Humanistas",
-		"Level": "",
-		"Title": "HUMANISMO Y CULTURA CIUDADANA",
-		"Nrc": " ",
-		"Hours": []
 	},
 	{
-		"Ctg": "Ciencias Humanistas",
-		"Level": "",
-		"Title": "CRISTOLOGÍA BÁSICA",
-		"Nrc": "17170",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "5",
+		"title": "ANÁLISIS NUMÉRICO - LAB",
+		"nrc": "10321",
+		"hour": [
 			{
-				"Day": "mie",
-				"Start": 10,
-				"End": 12
-			},
-			{
-				"Day": "vie",
-				"Start": 10,
-				"End": 12
+				"day": "mie",
+				"start": 14,
+				"end": 16
 			}
 		]
 	},
 	{
-		"Ctg": "Ciencias Humanistas",
-		"Level": "",
-		"Title": "CRISTOLOGÍA BÁSICA",
-		"Nrc": "10165",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "5",
+		"title": "ANÁLISIS NUMÉRICO - LAB",
+		"nrc": "10389",
+		"hour": [
 			{
-				"Day": "mar",
-				"Start": 14,
-				"End": 16
-			},
-			{
-				"Day": "jue",
-				"Start": 14,
-				"End": 16
+				"day": "mie",
+				"start": 10,
+				"end": 12
 			}
 		]
 	},
 	{
-		"Ctg": "Ciencias Humanistas",
-		"Level": "",
-		"Title": "CRISTOLOGÍA BÁSICA",
-		"Nrc": "17386",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "5",
+		"title": "CRIPTOGRAFÍA Y SEGURIDAD DE LA INFORMACIÓN - LAB",
+		"nrc": "10391",
+		"hour": [
 			{
-				"Day": "mie",
-				"Start": 8,
-				"End": 10
+				"day": "jue",
+				"start": 11,
+				"end": 12
 			},
 			{
-				"Day": "vie",
-				"Start": 8,
-				"End": 10
+				"day": "vie",
+				"start": 10,
+				"end": 12
 			}
 		]
 	},
 	{
-		"Ctg": "Ciencias Humanistas",
-		"Level": "",
-		"Title": "CRISTOLOGÍA BÁSICA",
-		"Nrc": "17448",
-		"Hours": [
-			{
-				"Day": "mar",
-				"Start": 8,
-				"End": 10
-			},
+		"ctg": "Sistemas",
+		"level": "5",
+		"title": "CRIPTOGRAFÍA Y SEGURIDAD DE LA INFORMACIÓN - LAB",
+		"nrc": "10392",
+		"hour": [
 			{
-				"Day": "jue",
-				"Start": 8,
-				"End": 10
+				"day": "jue",
+				"start": 8,
+				"end": 11
 			}
 		]
 	},
 	{
-		"Ctg": "Ciencias Humanistas",
-		"Level": "",
-		"Title": "CRISTOLOGÍA BÁSICA",
-		"Nrc": "17590",
-		"Hours": [
-			{
-				"Day": "lun",
-				"Start": 8,
-				"End": 10
-			},
+		"ctg": "Sistemas",
+		"level": "5",
+		"title": "REDES DE DATOS - LAB",
+		"nrc": "10396",
+		"hour": [
 			{
-				"Day": "mie",
-				"Start": 8,
-				"End": 10
+				"day": "jue",
+				"start": 14,
+				"end": 16
 			}
 		]
 	},
 	{
-		"Ctg": "Ciencias Humanistas",
-		"Level": "",
-		"Title": "CRISTOLOGÍA BÁSICA",
-		"Nrc": "16953",
-		"Hours": [
-			{
-				"Day": "lun",
-				"Start": 6,
-				"End": 8
-			},
+		"ctg": "Sistemas",
+		"level": "5",
+		"title": "REDES DE DATOS - LAB",
+		"nrc": "10397",
+		"hour": [
 			{
-				"Day": "mie",
-				"Start": 6,
-				"End": 8
+				"day": "vie",
+				"start": 16,
+				"end": 18
 			}
 		]
 	},
 	{
-		"Ctg": "Ciencias Humanistas",
-		"Level": "",
-		"Title": "CRISTOLOGÍA BÁSICA",
-		"Nrc": "18491",
-		"Hours": [
-			{
-				"Day": "lun",
-				"Start": 8,
-				"End": 10
-			},
+		"ctg": "Sistemas",
+		"level": "6",
+		"title": "DESARROLLO DE APLICACIONES WEB - TEO",
+		"nrc": "10398",
+		"hour": [
 			{
-				"Day": "jue",
-				"Start": 8,
-				"End": 10
+				"day": "mie",
+				"start": 8,
+				"end": 10
 			}
 		]
 	},
 	{
-		"Ctg": "Ciencias Humanistas",
-		"Level": "",
-		"Title": "LENGUA Y CULTURA",
-		"Nrc": "17280",
-		"Hours": [
-			{
-				"Day": "lun",
-				"Start": 10,
-				"End": 12
-			},
+		"ctg": "Sistemas",
+		"level": "6",
+		"title": "DISEÑO DE INFRAESTRUCTURAS TECNOLÓGICAS - TEO",
+		"nrc": "10428",
+		"hour": [
 			{
-				"Day": "mie",
-				"Start": 10,
-				"End": 12
+				"day": "jue",
+				"start": 18,
+				"end": 20
 			}
 		]
 	},
 	{
-		"Ctg": "Ciencias Humanistas",
-		"Level": "",
-		"Title": "LENGUA Y CULTURA",
-		"Nrc": "17405",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "6",
+		"title": "GESTIÓN DE TECNOLOGÍAS DE INFORMACIÓN",
+		"nrc": "10431",
+		"hour": [
 			{
-				"Day": "lun",
-				"Start": 6,
-				"End": 8
+				"day": "mar",
+				"start": 6,
+				"end": 8
 			},
 			{
-				"Day": "mie",
-				"Start": 6,
-				"End": 8
+				"day": "mie",
+				"start": 6,
+				"end": 8
 			}
 		]
 	},
 	{
-		"Ctg": "Ciencias Humanistas",
-		"Level": "",
-		"Title": "LENGUA Y CULTURA",
-		"Nrc": "17373",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "6",
+		"title": "PROYECTO INTEGRADOR 2",
+		"nrc": "10435",
+		"hour": [
 			{
-				"Day": "lun",
-				"Start": 16,
-				"End": 18
-			},
-			{
-				"Day": "mie",
-				"Start": 16,
-				"End": 18
+				"day": "mie",
+				"start": 15,
+				"end": 18
 			}
 		]
 	},
 	{
-		"Ctg": "Ciencias Humanistas",
-		"Level": "",
-		"Title": "LENGUA Y CULTURA",
-		"Nrc": "17462",
-		"Hours": [
-			{
-				"Day": "mar",
-				"Start": 16,
-				"End": 18
-			},
+		"ctg": "Sistemas",
+		"level": "6",
+		"title": "DESARROLLO DE APLICACIONES WEB - LAB",
+		"nrc": "10399",
+		"hour": [
 			{
-				"Day": "jue",
-				"Start": 16,
-				"End": 18
+				"day": "mar",
+				"start": 8,
+				"end": 10
 			}
 		]
 	},
 	{
-		"Ctg": "Ciencias Humanistas",
-		"Level": "",
-		"Title": "LENGUA Y CULTURA",
-		"Nrc": "17248",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "6",
+		"title": "DESARROLLO DE APLICACIONES WEB - LAB",
+		"nrc": "10400",
+		"hour": [
 			{
-				"Day": "lun",
-				"Start": 10,
-				"End": 12
-			},
-			{
-				"Day": "mie",
-				"Start": 8,
-				"End": 10
+				"day": "mar",
+				"start": 10,
+				"end": 12
 			}
 		]
 	},
 	{
-		"Ctg": "Ciencias Humanistas",
-		"Level": "",
-		"Title": "LENGUA Y CULTURA",
-		"Nrc": "16966",
-		"Hours": [
-			{
-				"Day": "mie",
-				"Start": 12,
-				"End": 14
-			},
+		"ctg": "Sistemas",
+		"level": "6",
+		"title": "DISEÑO DE INFRAESTRUCTURAS TECNOLÓGICAS - LAB",
+		"nrc": "10429",
+		"hour": [
 			{
-				"Day": "vie",
-				"Start": 12,
-				"End": 14
+				"day": "sab",
+				"start": 8,
+				"end": 10
 			}
 		]
 	},
 	{
-		"Ctg": "Ciencias Humanistas",
-		"Level": "",
-		"Title": "LENGUA Y CULTURA",
-		"Nrc": "16986",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "6",
+		"title": "DISEÑO DE INFRAESTRUCTURAS TECNOLÓGICAS - LAB",
+		"nrc": "10430",
+		"hour": [
 			{
-				"Day": "lun",
-				"Start": 16,
-				"End": 18
-			},
-			{
-				"Day": "mie",
-				"Start": 14,
-				"End": 16
+				"day": "sab",
+				"start": 10,
+				"end": 12
 			}
 		]
 	},
 	{
-		"Ctg": "Ciencias Humanistas",
-		"Level": "",
-		"Title": "LENGUA Y CULTURA",
-		"Nrc": "17543",
-		"Hours": [
-			{
-				"Day": "mar",
-				"Start": 12,
-				"End": 14
-			},
+		"ctg": "Sistemas",
+		"level": "6",
+		"title": "PROYECTO INTEGRADOR 2",
+		"nrc": "10436",
+		"hour": [
 			{
-				"Day": "jue",
-				"Start": 12,
-				"End": 14
+				"day": "jue",
+				"start": 15,
+				"end": 18
 			}
 		]
 	},
 	{
-		"Ctg": "Ciencias Humanistas",
-		"Level": "",
-		"Title": "LENGUA Y CULTURA",
-		"Nrc": "17698",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "7",
+		"title": "ASEGURAMIENTO DE INFRAESTRUCTURAS TECNOLOGICAS - TEO",
+		"nrc": "10438",
+		"hour": [
 			{
-				"Day": "lun",
-				"Start": 18,
-				"End": 20
-			},
-			{
-				"Day": "mie",
-				"Start": 18,
-				"End": 20
+				"day": "mie",
+				"start": 18,
+				"end": 20
 			}
 		]
 	},
 	{
-		"Ctg": "Ciencias Humanistas",
-		"Level": "",
-		"Title": "LENGUA Y CULTURA",
-		"Nrc": "17660",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "7",
+		"title": "DESARROLLO DE APLICACIONES MÓVILES - TEO",
+		"nrc": "10442",
+		"hour": [
 			{
-				"Day": "lun",
-				"Start": 14,
-				"End": 16
-			},
-			{
-				"Day": "mie",
-				"Start": 14,
-				"End": 16
+				"day": "mie",
+				"start": 14,
+				"end": 16
 			}
 		]
 	},
 	{
-		"Ctg": "Ciencias Humanistas",
-		"Level": "",
-		"Title": "LENGUA Y CULTURA",
-		"Nrc": "17711",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "7",
+		"title": "DERECHO INFORMATICO (VIRTUAL)",
+		"nrc": "10445",
+		"hour": [
 			{
-				"Day": "mie",
-				"Start": 14,
-				"End": 16
+				"day": "lun",
+				"start": 12,
+				"end": 14
 			},
 			{
-				"Day": "vie",
-				"Start": 14,
-				"End": 16
+				"day": "mie",
+				"start": 12,
+				"end": 14
 			}
 		]
 	},
 	{
-		"Ctg": "Ciencias Humanistas",
-		"Level": "",
-		"Title": "LENGUA Y CULTURA",
-		"Nrc": "17563",
-		"Hours": [
-			{
-				"Day": "mar",
-				"Start": 14,
-				"End": 16
-			},
+		"ctg": "Sistemas",
+		"level": "7",
+		"title": "PROYECTO INTEGRADOR 3",
+		"nrc": "10449",
+		"hour": [
 			{
-				"Day": "jue",
-				"Start": 14,
-				"End": 16
+				"day": "mar",
+				"start": 16,
+				"end": 19
 			}
 		]
 	},
 	{
-		"Ctg": "Ciencias Humanistas",
-		"Level": "",
-		"Title": "ÉTICA GENERAL",
-		"Nrc": "19571",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "7",
+		"title": "ASEGURAMIENTO DE INFRAESTRUCTURAS TECNOLOGICAS - LAB.",
+		"nrc": "10440",
+		"hour": [
 			{
-				"Day": "mar",
-				"Start": 16,
-				"End": 18
+				"day": "vie",
+				"start": 18,
+				"end": 20
 			}
 		]
 	},
 	{
-		"Ctg": "Ciencias Humanistas",
-		"Level": "",
-		"Title": "ÉTICA GENERAL",
-		"Nrc": "19572",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "7",
+		"title": "ASEGURAMIENTO DE INFRAESTRUCTURAS TECNOLOGICAS - LAB.",
+		"nrc": "10441",
+		"hour": [
 			{
-				"Day": "mar",
-				"Start": 8,
-				"End": 10
+				"day": "sab",
+				"start": 6,
+				"end": 8
 			}
 		]
 	},
 	{
-		"Ctg": "Ciencias Humanistas",
-		"Level": "",
-		"Title": "ÉTICA GENERAL",
-		"Nrc": "19573",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "7",
+		"title": "DESARROLLO DE APLICACIONES MÓVILES - LAB",
+		"nrc": "10443",
+		"hour": [
 			{
-				"Day": "lun",
-				"Start": 16,
-				"End": 18
+				"day": "mar",
+				"start": 14,
+				"end": 16
 			}
 		]
 	},
 	{
-		"Ctg": "Ciencias Humanistas",
-		"Level": "",
-		"Title": "ÉTICA GENERAL",
-		"Nrc": "19574",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "7",
+		"title": "DESARROLLO DE APLICACIONES MÓVILES - LAB",
+		"nrc": "10444",
+		"hour": [
 			{
-				"Day": "jue",
-				"Start": 16,
-				"End": 18
+				"day": "vie",
+				"start": 14,
+				"end": 16
 			}
 		]
 	},
 	{
-		"Ctg": "Ciencias Humanistas",
-		"Level": "",
-		"Title": "ÉTICA GENERAL",
-		"Nrc": "19575",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "8",
+		"title": "SISTEMAS DISTRIBUIDOS - TEO",
+		"nrc": "10457",
+		"hour": [
 			{
-				"Day": "jue",
-				"Start": 8,
-				"End": 10
+				"day": "mie",
+				"start": 8,
+				"end": 10
 			}
 		]
 	},
 	{
-		"Ctg": "Ciencias Humanistas",
-		"Level": "",
-		"Title": "ÉTICA GENERAL",
-		"Nrc": "19576",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "8",
+		"title": "TRABAJO DE GRADO",
+		"nrc": "10450",
+		"hour": [
 			{
-				"Day": "mie",
-				"Start": 8,
-				"End": 10
+				"day": "jue",
+				"start": 8,
+				"end": 9
 			}
 		]
 	},
 	{
-		"Ctg": "Ciencias Humanistas",
-		"Level": "",
-		"Title": "ÉTICA GENERAL",
-		"Nrc": "19577",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "8",
+		"title": "SISTEMAS DISTRIBUIDOS - LAB",
+		"nrc": "10458",
+		"hour": [
 			{
-				"Day": "lun",
-				"Start": 14,
-				"End": 16
+				"day": "mar",
+				"start": 8,
+				"end": 10
 			}
 		]
 	},
 	{
-		"Ctg": "Ciencias Humanistas",
-		"Level": "",
-		"Title": "ETICA PROFESIONAL",
-		"Nrc": "19579",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "8",
+		"title": "SISTEMAS DISTRIBUIDOS - LAB",
+		"nrc": "10459",
+		"hour": [
 			{
-				"Day": "jue",
-				"Start": 8,
-				"End": 10
+				"day": "jue",
+				"start": 6,
+				"end": 8
 			}
 		]
 	},
 	{
-		"Ctg": "Ciencias Humanistas",
-		"Level": "",
-		"Title": "ETICA PROFESIONAL",
-		"Nrc": "19580",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "10",
+		"title": "TRABAJO DE GRADO II",
+		"nrc": "10460",
+		"hour": [
 			{
-				"Day": "mie",
-				"Start": 10,
-				"End": 12
+				"day": "sab",
+				"start": 18,
+				"end": 20
 			}
 		]
 	},
 	{
-		"Ctg": "Ciencias Humanistas",
-		"Level": "",
-		"Title": "ETICA PROFESIONAL",
-		"Nrc": "19581",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "6",
+		"title": "OPTATIVA I: Fundamentos de Inteligencia Artíficial - TEO",
+		"nrc": "10432",
+		"hour": [
 			{
-				"Day": "mie",
-				"Start": 12,
-				"End": 14
+				"day": "mie",
+				"start": 18,
+				"end": 20
 			}
 		]
 	},
 	{
-		"Ctg": "Ciencias Humanistas",
-		"Level": "",
-		"Title": "ETICA PROFESIONAL",
-		"Nrc": "19582",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "7",
+		"title": "OPTATIVA II - Analítica de Datos - TEO",
+		"nrc": "10446",
+		"hour": [
 			{
-				"Day": "mar",
-				"Start": 10,
-				"End": 12
-			}
-		]
-	},
-	{
-		"Ctg": "Ciencias Humanistas",
-		"Level": "",
-		"Title": "ETICA PROFESIONAL",
-		"Nrc": "19583",
-		"Hours": [
+				"day": "mie",
+				"start": 17,
+				"end": 18
+			},
 			{
-				"Day": "vie",
-				"Start": 10,
-				"End": 12
+				"day": "vie",
+				"start": 17,
+				"end": 18
 			}
 		]
 	},
 	{
-		"Ctg": "Ciencias Humanistas",
-		"Level": "",
-		"Title": "ETICA PROFESIONAL",
-		"Nrc": "19584",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "8",
+		"title": "OPTATIVA III TEO: Hacking Ético - TEO",
+		"nrc": "10451",
+		"hour": [
 			{
-				"Day": "mie",
-				"Start": 8,
-				"End": 10
+				"day": "sab",
+				"start": 8,
+				"end": 10
 			}
 		]
 	},
 	{
-		"Ctg": "Ciencias Humanistas",
-		"Level": "",
-		"Title": "EMPRENDIMIENTO Y RESPONSABILIDAD SOCIAL",
-		"Nrc": "17484",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "8",
+		"title": "OPTATIVA IV TEO: Desarrollo de Vídeo Juegos - TEO",
+		"nrc": "10454",
+		"hour": [
 			{
-				"Day": "lun",
-				"Start": 16,
-				"End": 18
-			},
-			{
-				"Day": "mie",
-				"Start": 16,
-				"End": 18
+				"day": "mar",
+				"start": 10,
+				"end": 12
 			}
 		]
 	},
 	{
-		"Ctg": "Ciencias Humanistas",
-		"Level": "",
-		"Title": "EMPRENDIMIENTO Y RESPONSABILIDAD SOCIAL",
-		"Nrc": "17004",
-		"Hours": [
-			{
-				"Day": "mar",
-				"Start": 12,
-				"End": 14
-			},
+		"ctg": "Sistemas",
+		"level": "6",
+		"title": "OPTATIVA I: Fundamentos de Inteligencia Artíficial - LAB",
+		"nrc": "10433",
+		"hour": [
 			{
-				"Day": "jue",
-				"Start": 12,
-				"End": 14
+				"day": "vie",
+				"start": 18,
+				"end": 20
 			}
 		]
 	},
 	{
-		"Ctg": "Ciencias Humanistas",
-		"Level": "",
-		"Title": "EMPRENDIMIENTO Y RESPONSABILIDAD SOCIAL",
-		"Nrc": "17049",
-		"Hours": [
-			{
-				"Day": "mar",
-				"Start": 10,
-				"End": 12
-			},
+		"ctg": "Sistemas",
+		"level": "6",
+		"title": "OPTATIVA I: Fundamentos de Inteligencia Artíficial - LAB",
+		"nrc": "10434",
+		"hour": [
 			{
-				"Day": "jue",
-				"Start": 10,
-				"End": 12
+				"day": "sab",
+				"start": 6,
+				"end": 8
 			}
 		]
 	},
 	{
-		"Ctg": "Ciencias Humanistas",
-		"Level": "",
-		"Title": "EMPRENDIMIENTO Y RESPONSABILIDAD SOCIAL",
-		"Nrc": "17051",
-		"Hours": [
-			{
-				"Day": "lun",
-				"Start": 8,
-				"End": 10
-			},
+		"ctg": "Sistemas",
+		"level": "7",
+		"title": "OPTATIVA II - Analítica de Datos - LAB",
+		"nrc": "10447",
+		"hour": [
 			{
-				"Day": "mie",
-				"Start": 8,
-				"End": 10
+				"day": "sab",
+				"start": 8,
+				"end": 10
 			}
 		]
 	},
 	{
-		"Ctg": "Ciencias Humanistas",
-		"Level": "",
-		"Title": "EMPRENDIMIENTO Y RESPONSABILIDAD SOCIAL",
-		"Nrc": "17111",
-		"Hours": [
-			{
-				"Day": "mar",
-				"Start": 8,
-				"End": 10
-			},
+		"ctg": "Sistemas",
+		"level": "7",
+		"title": "OPTATIVA II - Analítica de Datos - LAB",
+		"nrc": "10448",
+		"hour": [
 			{
-				"Day": "jue",
-				"Start": 8,
-				"End": 10
+				"day": "sab",
+				"start": 10,
+				"end": 12
 			}
 		]
 	},
 	{
-		"Ctg": "Ciencias Humanistas",
-		"Level": "",
-		"Title": "EMPRENDIMIENTO Y RESPONSABILIDAD SOCIAL",
-		"Nrc": "17533",
-		"Hours": [
-			{
-				"Day": "mar",
-				"Start": 6,
-				"End": 8
-			},
+		"ctg": "Sistemas",
+		"level": "8",
+		"title": "OPTATIVA III LAB: Hacking Ético - LAB",
+		"nrc": "10452",
+		"hour": [
 			{
-				"Day": "jue",
-				"Start": 6,
-				"End": 8
+				"day": "sab",
+				"start": 10,
+				"end": 12
 			}
 		]
 	},
 	{
-		"Ctg": "Ciencias Humanistas",
-		"Level": "",
-		"Title": "EMPRENDIMIENTO Y RESPONSABILIDAD SOCIAL",
-		"Nrc": "17134",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "8",
+		"title": "OPTATIVA III LAB: Hacking Ético - LAB",
+		"nrc": "10453",
+		"hour": [
 			{
-				"Day": "lun",
-				"Start": 6,
-				"End": 8
-			},
-			{
-				"Day": "mie",
-				"Start": 6,
-				"End": 8
+				"day": "sab",
+				"start": 12,
+				"end": 14
 			}
 		]
 	},
 	{
-		"Ctg": "Ciencias Humanistas",
-		"Level": "",
-		"Title": "EMPRENDIMIENTO Y RESPONSABILIDAD SOCIAL",
-		"Nrc": "16937",
-		"Hours": [
-			{
-				"Day": "mar",
-				"Start": 14,
-				"End": 16
-			},
+		"ctg": "Sistemas",
+		"level": "8",
+		"title": "OPTATIVA IV LAB: Desarrollo de Vídeo Juegos - LAB",
+		"nrc": "10455",
+		"hour": [
 			{
-				"Day": "jue",
-				"Start": 14,
-				"End": 16
+				"day": "mie",
+				"start": 10,
+				"end": 12
 			}
 		]
 	},
 	{
-		"Ctg": "Ciencias Humanistas",
-		"Level": "",
-		"Title": "EMPRENDIMIENTO Y RESPONSABILIDAD SOCIAL",
-		"Nrc": "17123",
-		"Hours": [
+		"ctg": "Sistemas",
+		"level": "8",
+		"title": "OPTATIVA IV LAB: Desarrollo de Vídeo Juegos - LAB",
+		"nrc": "10456",
+		"hour": [
 			{
-				"Day": "mar",
-				"Start": 8,
-				"End": 10
-			},
-			{
-				"Day": "jue",
-				"Start": 8,
-				"End": 10
+				"day": "jue",
+				"start": 10,
+				"end": 12
 			}
 		]
 	},
 	{
-		"Ctg": "Ciencias Humanistas",
-		"Level": "",
-		"Title": "EMPRENDIMIENTO Y RESPONSABILIDAD SOCIAL",
-		"Nrc": "17126",
-		"Hours": [
+		"ctg": "Electivas",
+		"level": "",
+		"title": "APRECIACION MUSICAL (ELECTIVA)",
+		"nrc": "19335",
+		"hour": [
 			{
-				"Day": "mar",
-				"Start": 16,
-				"End": 18
+				"day": "lun",
+				"start": 16,
+				"end": 17
 			},
 			{
-				"Day": "jue",
-				"Start": 16,
-				"End": 18
+				"day": "mie",
+				"start": 16,
+				"end": 18
 			}
 		]
 	},
 	{
-		"Ctg": "Ciencias Humanistas",
-		"Level": "",
-		"Title": "EMPRENDIMIENTO Y RESPONSABILIDAD SOCIAL",
-		"Nrc": "16897",
-		"Hours": [
+		"ctg": "Electivas",
+		"level": "",
+		"title": "APRECIACION MUSICAL (ELECTIVA)",
+		"nrc": "19333",
+		"hour": [
 			{
-				"Day": "lun",
-				"Start": 8,
-				"End": 10
+				"day": "mar",
+				"start": 10,
+				"end": 12
 			},
 			{
-				"Day": "mie",
-				"Start": 8,
-				"End": 9
+				"day": "jue",
+				"start": 10,
+				"end": 12
 			}
 		]
 	},
 	{
-		"Ctg": "Ciencias Humanistas",
-		"Level": "",
-		"Title": "EMPRENDIMIENTO Y RESPONSABILIDAD SOCIAL",
-		"Nrc": "17643",
-		"Hours": [
+		"ctg": "Electivas",
+		"level": "",
+		"title": "APRECIACION MUSICAL (ELECTIVA) \nNUEVO",
+		"nrc": "19334",
+		"hour": [
 			{
-				"Day": "mar",
-				"Start": 16,
-				"End": 6
+				"day": "lun",
+				"start": 10,
+				"end": 12
 			},
 			{
-				"Day": "jue",
-				"Start": 16,
-				"End": 6
+				"day": "mie",
+				"start": 10,
+				"end": 12
 			}
 		]
 	},
 	{
-		"Ctg": "Ciencias Humanistas",
-		"Level": "",
-		"Title": "EMPRENDIMIENTO Y RESPONSABILIDAD SOCIAL",
-		"Nrc": "17263",
-		"Hours": [
+		"ctg": "Electivas",
+		"level": "",
+		"title": "ELEC - COMPRENSION LECTORA",
+		"nrc": "19342",
+		"hour": [
 			{
-				"Day": "lun",
-				"Start": 10,
-				"End": 12
+				"day": "mar",
+				"start": 6,
+				"end": 8
 			},
 			{
-				"Day": "mie",
-				"Start": 10,
-				"End": 12
+				"day": "jue",
+				"start": 6,
+				"end": 8
 			}
 		]
 	},
 	{
-		"Ctg": "Ciencias Humanistas",
-		"Level": "",
-		"Title": "EMPRENDIMIENTO Y RESPONSABILIDAD SOCIAL",
-		"Nrc": "17719",
-		"Hours": [
+		"ctg": "Electivas",
+		"level": "",
+		"title": "ELEC - COMPRENSION LECTORA",
+		"nrc": "19341",
+		"hour": [
 			{
-				"Day": "lun",
-				"Start": 14,
-				"End": 16
+				"day": "lun",
+				"start": 12,
+				"end": 14
 			},
 			{
-				"Day": "mie",
-				"Start": 14,
-				"End": 16
+				"day": "mie",
+				"start": 12,
+				"end": 14
 			}
 		]
 	},
 	{
-		"Ctg": "Electivas",
-		"Level": "",
-		"Title": "APRECIACION MUSICAL (ELECTIVA)",
-		"Nrc": "17547",
-		"Hours": [
-			{
-				"Day": "lun",
-				"Start": 16,
-				"End": 17
-			},
+		"ctg": "Electivas",
+		"level": "",
+		"title": "CONSTITUCION POLITICA DE COLOMBIA (ELECTIVA)",
+		"nrc": "19336",
+		"hour": [
 			{
-				"Day": "mie",
-				"Start": 16,
-				"End": 18
+				"day": "mie",
+				"start": 14,
+				"end": 17
 			}
 		]
 	},
 	{
-		"Ctg": "Electivas",
-		"Level": "",
-		"Title": "APRECIACION MUSICAL (ELECTIVA)",
-		"Nrc": "17410",
-		"Hours": [
+		"ctg": "Electivas",
+		"level": "",
+		"title": "CONSTITUCION POLITICA DE COLOMBIA (ELECTIVA)",
+		"nrc": "19337",
+		"hour": [
 			{
-				"Day": "mar",
-				"Start": 10,
-				"End": 11
-			},
-			{
-				"Day": "jue",
-				"Start": 10,
-				"End": 12
+				"day": "mie",
+				"start": 10,
+				"end": 13
 			}
 		]
 	},
 	{
-		"Ctg": "Electivas",
-		"Level": "",
-		"Title": "ELEC - COMPRENSION LECTORA",
-		"Nrc": "17565",
-		"Hours": [
+		"ctg": "Electivas",
+		"level": "",
+		"title": "ECOLOGÍA Y SOCIEDAD - ELECTIVA",
+		"nrc": "19340",
+		"hour": [
 			{
-				"Day": "lun",
-				"Start": 12,
-				"End": 14
+				"day": "lun",
+				"start": 12,
+				"end": 14
 			},
 			{
-				"Day": "jue",
-				"Start": 12,
-				"End": 14
+				"day": "mie",
+				"start": 12,
+				"end": 14
 			}
 		]
 	},
 	{
-		"Ctg": "Electivas",
-		"Level": "",
-		"Title": "ELEC - COMPRENSION LECTORA",
-		"Nrc": "17262",
-		"Hours": [
+		"ctg": "Electivas",
+		"level": "",
+		"title": "HISTORIA DEL ARTE UNIVERSAL (ELECTIVA)",
+		"nrc": "19349",
+		"hour": [
 			{
-				"Day": "mar",
-				"Start": 6,
-				"End": 8
+				"day": "mar",
+				"start": 12,
+				"end": 13
 			},
-			{
-				"Day": "jue",
-				"Start": 6,
-				"End": 8
-			}
-		]
-	},
-	{
-		"Ctg": "Electivas",
-		"Level": "",
-		"Title": "CONSTITUCION POLITICA DE COLOMBIA (ELECTIVA)",
-		"Nrc": "16899",
-		"Hours": [
-			{
-				"Day": "jue",
-				"Start": 10,
-				"End": 25
-			}
-		]
-	},
-	{
-		"Ctg": "Electivas",
-		"Level": "",
-		"Title": "CONSTITUCION POLITICA DE COLOMBIA (ELECTIVA)",
-		"Nrc": "17571",
-		"Hours": [
 			{
-				"Day": "jue",
-				"Start": 14,
-				"End": 17
+				"day": "jue",
+				"start": 12,
+				"end": 14
 			}
 		]
 	},
 	{
-		"Ctg": "Electivas",
-		"Level": "",
-		"Title": "ECOLOGÍA Y SOCIEDAD - ELECTIVA",
-		"Nrc": "17038",
-		"Hours": [
+		"ctg": "Electivas",
+		"level": "",
+		"title": "NARRATIVA LATINOAMERICANA (ELECTIVA)",
+		"nrc": "19353",
+		"hour": [
 			{
-				"Day": "mar",
-				"Start": 8,
-				"End": 9
+				"day": "lun",
+				"start": 10,
+				"end": 12
 			},
 			{
-				"Day": "jue",
-				"Start": 8,
-				"End": 10
+				"day": "mie",
+				"start": 10,
+				"end": 11
 			}
 		]
 	},
 	{
-		"Ctg": "Electivas",
-		"Level": "",
-		"Title": "HISTORIA DEL ARTE UNIVERSAL (ELECTIVA)",
-		"Nrc": "17021",
-		"Hours": [
+		"ctg": "Electivas",
+		"level": "",
+		"title": "REDACCIÓN BÁSICA Y ORTOGRAFÍA - ELECTIVA",
+		"nrc": "19357",
+		"hour": [
 			{
-				"Day": "mar",
-				"Start": 12,
-				"End": 25
+				"day": "mar",
+				"start": 18,
+				"end": 20
 			},
 			{
-				"Day": "jue",
-				"Start": 12,
-				"End": 14
+				"day": "jue",
+				"start": 18,
+				"end": 20
 			}
 		]
 	},
 	{
-		"Ctg": "Electivas",
-		"Level": "",
-		"Title": "NARRATIVA LATINOAMERICANA (ELECTIVA)",
-		"Nrc": "16990",
-		"Hours": [
+		"ctg": "Electivas",
+		"level": "",
+		"title": "REDACCIÓN BÁSICA Y ORTOGRAFÍA - ELECTIVA",
+		"nrc": "19358",
+		"hour": [
 			{
-				"Day": "lun",
-				"Start": 10,
-				"End": 12
+				"day": "lun",
+				"start": 6,
+				"end": 8
 			},
 			{
-				"Day": "jue",
-				"Start": 10,
-				"End": 11
+				"day": "mie",
+				"start": 6,
+				"end": 8
 			}
 		]
 	},
 	{
-		"Ctg": "Electivas",
-		"Level": "",
-		"Title": "REDACCIÓN BÁSICA Y ORTOGRAFÍA - ELECTIVA",
-		"Nrc": "17546",
-		"Hours": [
+		"ctg": "Electivas",
+		"level": "",
+		"title": "SABORES Y CULTURAS EXÓTICAS",
+		"nrc": "19359",
+		"hour": [
 			{
-				"Day": "lun",
-				"Start": 16,
-				"End": 18
+				"day": "mar",
+				"start": 10,
+				"end": 12
 			},
 			{
-				"Day": "mie",
-				"Start": 16,
-				"End": 18
+				"day": "jue",
+				"start": 10,
+				"end": 12
 			}
 		]
 	},
 	{
-		"Ctg": "Electivas",
-		"Level": "",
-		"Title": "REDACCIÓN BÁSICA Y ORTOGRAFÍA - ELECTIVA",
-		"Nrc": "17247",
-		"Hours": [
-			{
-				"Day": "mar",
-				"Start": 18,
-				"End": 20
-			},
+		"ctg": "Electivas",
+		"level": "",
+		"title": "SOCIEDAD Y SALUD",
+		"nrc": "19362",
+		"hour": [
 			{
-				"Day": "jue",
-				"Start": 18,
-				"End": 20
+				"day": "mie",
+				"start": 9,
+				"end": 12
 			}
 		]
 	},
 	{
-		"Ctg": "Electivas",
-		"Level": "",
-		"Title": "SABORES Y CULTURAS EXÓTICAS",
-		"Nrc": "17264",
-		"Hours": [
+		"ctg": "Electivas",
+		"level": "",
+		"title": "TALLER DE LITERATURA",
+		"nrc": "19364",
+		"hour": [
 			{
-				"Day": "lun",
-				"Start": 14,
-				"End": 16
+				"day": "mar",
+				"start": 16,
+				"end": 18
 			},
-			{
-				"Day": "mie",
-				"Start": 14,
-				"End": 16
-			}
-		]
-	},
-	{
-		"Ctg": "Electivas",
-		"Level": "",
-		"Title": "SOCIEDAD Y SALUD",
-		"Nrc": "17545",
-		"Hours": [
 			{
-				"Day": "mie",
-				"Start": 9,
-				"End": 12
+				"day": "jue",
+				"start": 16,
+				"end": 18
 			}
 		]
 	},
 	{
-		"Ctg": "Electivas",
-		"Level": "",
-		"Title": "TALLER DE LITERATURA",
-		"Nrc": "17169",
-		"Hours": [
+		"ctg": "Electivas",
+		"level": "",
+		"title": "TALLER DE LITERATURA",
+		"nrc": "19363",
+		"hour": [
 			{
-				"Day": "mar",
-				"Start": 8,
-				"End": 10
+				"day": "mar",
+				"start": 8,
+				"end": 10
 			},
 			{
-				"Day": "jue",
-				"Start": 8,
-				"End": 10
+				"day": "jue",
+				"start": 8,
+				"end": 10
 			}
 		]
 	},
 	{
-		"Ctg": "Electivas",
-		"Level": "",
-		"Title": "TALLER DE LITERATURA",
-		"Nrc": "17146",
-		"Hours": [
+		"ctg": "Electivas",
+		"level": "",
+		"title": "ESTRATEGIA DE APRENDIZAJE (ELECTIVA)",
+		"nrc": "19343",
+		"hour": [
 			{
-				"Day": "mar",
-				"Start": 14,
-				"End": 16
+				"day": "mar",
+				"start": 16,
+				"end": 17
 			},
 			{
-				"Day": "jue",
-				"Start": 14,
-				"End": 16
+				"day": "jue",
+				"start": 16,
+				"end": 18
 			}
 		]
 	},
 	{
-		"Ctg": "Electivas",
-		"Level": "",
-		"Title": "ESTRATEGIA DE APRENDIZAJE (ELECTIVA)",
-		"Nrc": "17103",
-		"Hours": [
-			{
-				"Day": "mar",
-				"Start": 16,
-				"End": 17
-			},
+		"ctg": "Electivas",
+		"level": "",
+		"title": "ESTRATEGIA DE APRENDIZAJE (ELECTIVA)",
+		"nrc": "19344",
+		"hour": [
 			{
-				"Day": "jue",
-				"Start": 16,
-				"End": 18
+				"day": "mar",
+				"start": 18,
+				"end": 19
 			},
 			{
-				"Day": "vie",
-				"Start": 10,
-				"End": 12
+				"day": "jue",
+				"start": 18,
+				"end": 20
 			}
 		]
 	},
 	{
-		"Ctg": "Electivas",
-		"Level": "",
-		"Title": "ESTRATEGIA DE APRENDIZAJE (ELECTIVA)",
-		"Nrc": "17274",
-		"Hours": [
-			{
-				"Day": "mar",
-				"Start": 18,
-				"End": 19
-			},
-			{
-				"Day": "jue",
-				"Start": 18,
-				"End": 20
-			},
+		"ctg": "Electivas",
+		"level": "",
+		"title": "ETICA SOCIAL",
+		"nrc": "19346",
+		"hour": [
 			{
-				"Day": "vie",
-				"Start": 16,
-				"End": 18
+				"day": "lun",
+				"start": 7,
+				"end": 10
 			}
 		]
 	},
 	{
-		"Ctg": "Electivas",
-		"Level": "",
-		"Title": "VOCES NARRANDO LA PAZ",
-		"Nrc": "18558",
-		"Hours": [
+		"ctg": "Electivas",
+		"level": "",
+		"title": "ETICA SOCIAL",
+		"nrc": "19347",
+		"hour": [
 			{
-				"Day": "mar",
-				"Start": 8,
-				"End": 11
+				"day": "mar",
+				"start": 7,
+				"end": 10
 			}
 		]
 	},
 	{
-		"Ctg": "Electivas",
-		"Level": "",
-		"Title": "ETICA SOCIAL",
-		"Nrc": "17622",
-		"Hours": [
-			{
-				"Day": "lun",
-				"Start": 16,
-				"End": 18
-			},
+		"ctg": "Electivas",
+		"level": "",
+		"title": "ETICA SOCIAL",
+		"nrc": "19345",
+		"hour": [
 			{
-				"Day": "vie",
-				"Start": 15,
-				"End": 16
+				"day": "mie",
+				"start": 7,
+				"end": 10
 			}
 		]
 	},
 	{
-		"Ctg": "Electivas",
-		"Level": "",
-		"Title": "ETICA SOCIAL",
-		"Nrc": "17527",
-		"Hours": [
+		"ctg": "Electivas",
+		"level": "",
+		"title": "ETICA SOCIAL",
+		"nrc": "19348",
+		"hour": [
 			{
-				"Day": "mie",
-				"Start": 7,
-				"End": 10
+				"day": "mar",
+				"start": 8,
+				"end": 11
 			}
 		]
 	},
 	{
-		"Ctg": "Electivas",
-		"Level": "",
-		"Title": "ETICA SOCIAL",
-		"Nrc": "17245",
-		"Hours": [
+		"ctg": "Electivas",
+		"level": "",
+		"title": "INICIACIÓN A LA LECTO-ESCRITURA MUSICAL - ELECTIVA",
+		"nrc": "19350",
+		"hour": [
 			{
-				"Day": "mar",
-				"Start": 10,
-				"End": 11
+				"day": "lun",
+				"start": 12,
+				"end": 13
 			},
 			{
-				"Day": "jue",
-				"Start": 10,
-				"End": 12
+				"day": "mie",
+				"start": 12,
+				"end": 14
 			}
 		]
 	},
 	{
-		"Ctg": "Electivas",
-		"Level": "",
-		"Title": "INICIACIÓN A LA LECTO-ESCRITURA MUSICAL - ELECTIVA",
-		"Nrc": "17119",
-		"Hours": [
+		"ctg": "Electivas",
+		"level": "",
+		"title": "INTRODUCCIÓN A LA MÚSICA",
+		"nrc": "19939",
+		"hour": [
 			{
-				"Day": "lun",
-				"Start": 12,
-				"End": 25
+				"day": "mar",
+				"start": 8,
+				"end": 10
 			},
 			{
-				"Day": "mie",
-				"Start": 12,
-				"End": 14
+				"day": "jue",
+				"start": 8,
+				"end": 10
 			}
 		]
 	},
 	{
-		"Ctg": "Electivas",
-		"Level": "",
-		"Title": "INTRODUCCIÓN A LA MÚSICA",
-		"Nrc": "17573",
-		"Hours": [
+		"ctg": "Electivas",
+		"level": "",
+		"title": "INTRODUCCIÓN A LAS ARTES PLÁSTICAS",
+		"nrc": "19351",
+		"hour": [
 			{
-				"Day": "mar",
-				"Start": 8,
-				"End": 10
+				"day": "mar",
+				"start": 8,
+				"end": 10
 			},
 			{
-				"Day": "jue",
-				"Start": 8,
-				"End": 10
+				"day": "jue",
+				"start": 8,
+				"end": 10
 			}
 		]
 	},
 	{
-		"Ctg": "Electivas",
-		"Level": "",
-		"Title": "INTRODUCCIÓN A LAS ARTES PLÁSTICAS",
-		"Nrc": "17329",
-		"Hours": [
+		"ctg": "Electivas",
+		"level": "",
+		"title": "PROBLEMAS COLOMBIANOS",
+		"nrc": "19354",
+		"hour": [
 			{
-				"Day": "lun",
-				"Start": 10,
-				"End": 12
+				"day": "mie",
+				"start": 14,
+				"end": 16
 			},
 			{
-				"Day": "mie",
-				"Start": 10,
-				"End": 12
+				"day": "vie",
+				"start": 16,
+				"end": 18
 			}
 		]
 	},
 	{
-		"Ctg": "Electivas",
-		"Level": "",
-		"Title": "PORTAFOLIO",
-		"Nrc": "14048",
-		"Hours": [
+		"ctg": "Electivas",
+		"level": "",
+		"title": "PROBLEMAS COLOMBIANOS",
+		"nrc": "19355",
+		"hour": [
 			{
-				"Day": "mar",
-				"Start": 13,
-				"End": 14
+				"day": "mar",
+				"start": 12,
+				"end": 14
 			},
 			{
-				"Day": "vie",
-				"Start": 10,
-				"End": 12
+				"day": "jue",
+				"start": 12,
+				"end": 14
 			}
 		]
 	},
 	{
-		"Ctg": "Electivas",
-		"Level": "",
-		"Title": "PROBLEMAS COLOMBIANOS",
-		"Nrc": "17479",
-		"Hours": [
+		"ctg": "Electivas",
+		"level": "",
+		"title": "DERECHOS HUMANOS - ELECTIVA",
+		"nrc": "19367",
+		"hour": [
 			{
-				"Day": "mar",
-				"Start": 8,
-				"End": 10
+				"day": "lun",
+				"start": 8,
+				"end": 10
 			},
 			{
-				"Day": "jue",
-				"Start": 8,
-				"End": 10
+				"day": "mie",
+				"start": 11,
+				"end": 12
 			}
 		]
 	},
 	{
-		"Ctg": "Electivas",
-		"Level": "",
-		"Title": "PROBLEMAS COLOMBIANOS",
-		"Nrc": "17454",
-		"Hours": [
+		"ctg": "Electivas",
+		"level": "",
+		"title": "SEXUALIDAD - ELECTIVA",
+		"nrc": "19360",
+		"hour": [
 			{
-				"Day": "mar",
-				"Start": 12,
-				"End": 14
+				"day": "mie",
+				"start": 16,
+				"end": 18
 			},
 			{
-				"Day": "jue",
-				"Start": 12,
-				"End": 14
+				"day": "vie",
+				"start": 16,
+				"end": 17
 			}
 		]
 	},
 	{
-		"Ctg": "Electivas",
-		"Level": "",
-		"Title": "DERECHOS HUMANOS - ELECTIVA",
-		"Nrc": "17570",
-		"Hours": [
+		"ctg": "Electivas",
+		"level": "",
+		"title": "SEXUALIDAD - ELECTIVA",
+		"nrc": "19361",
+		"hour": [
 			{
-				"Day": "mar",
-				"Start": 16,
-				"End": 18
+				"day": "lun",
+				"start": 18,
+				"end": 19
 			},
 			{
-				"Day": "jue",
-				"Start": 16,
-				"End": 17
+				"day": "mie",
+				"start": 18,
+				"end": 20
 			}
 		]
 	},
 	{
-		"Ctg": "Electivas",
-		"Level": "",
-		"Title": "DERECHOS HUMANOS - ELECTIVA",
-		"Nrc": "17129",
-		"Hours": [
+		"ctg": "Electivas",
+		"level": "",
+		"title": "VOCES NARRANDO LA PAZ",
+		"nrc": "19366",
+		"hour": [
 			{
-				"Day": "mar",
-				"Start": 11,
-				"End": 12
+				"day": "lun",
+				"start": 14,
+				"end": 16
 			},
 			{
-				"Day": "jue",
-				"Start": 10,
-				"End": 12
+				"day": "mie",
+				"start": 14,
+				"end": 16
 			}
 		]
 	},
 	{
-		"Ctg": "Electivas",
-		"Level": "",
-		"Title": "SEXUALIDAD - ELECTIVA",
-		"Nrc": "17102",
-		"Hours": [
+		"ctg": "Electivas",
+		"level": "",
+		"title": "VOCES NARRANDO LA PAZ",
+		"nrc": "19390",
+		"hour": [
 			{
-				"Day": "mie",
-				"Start": 16,
-				"End": 18
+				"day": "lun",
+				"start": 14,
+				"end": 16
 			},
 			{
-				"Day": "vie",
-				"Start": 16,
-				"End": 17
+				"day": "mie",
+				"start": 10,
+				"end": 12
 			}
 		]
 	},
 	{
-		"Ctg": "Electivas",
-		"Level": "",
-		"Title": "SEXUALIDAD - ELECTIVA",
-		"Nrc": "17177",
-		"Hours": [
+		"ctg": "Electivas",
+		"level": "",
+		"title": "PORTAFOLIO",
+		"nrc": "15053",
+		"hour": [
 			{
-				"Day": "lun",
-				"Start": 18,
-				"End": 19
+				"day": "mar",
+				"start": 8,
+				"end": 10
 			},
 			{
-				"Day": "mie",
-				"Start": 18,
-				"End": 20
+				"day": "jue",
+				"start": 13,
+				"end": 14
 			}
 		]
 	},
 	{
-		"Ctg": "Electivas",
-		"Level": "",
-		"Title": "CULTURA POLÍTICA",
-		"Nrc": "51468",
-		"Hours": [
+		"ctg": "Electivas",
+		"level": "",
+		"title": "CULTURA POLÍTICA",
+		"nrc": "19338",
+		"hour": [
 			{
-				"Day": "lun",
-				"Start": 10,
-				"End": 12
+				"day": "jue",
+				"start": 8,
+				"end": 10
 			}
 		]
 	},
 	{
-		"Ctg": "Electivas",
-		"Level": "",
-		"Title": "CULTURA POLÍTICA",
-		"Nrc": "51894",
-		"Hours": [
+		"ctg": "Electivas",
+		"level": "",
+		"title": "CULTURA POLÍTICA",
+		"nrc": "19339",
+		"hour": [
 			{
-				"Day": "mar",
-				"Start": 12,
-				"End": 14
+				"day": "jue",
+				"start": 10,
+				"end": 12
 			}
 		]
 	},
 	{
-		"Ctg": "Electivas",
-		"Level": "",
-		"Title": "MONSTRUOS Y SERES MÍTICOS",
-		"Nrc": "51678",
-		"Hours": [
+		"ctg": "Electivas",
+		"level": "",
+		"title": "MONSTRUOS Y SERES MÍTICOS",
+		"nrc": "19352",
+		"hour": [
 			{
-				"Day": "mie",
-				"Start": 8,
-				"End": 10
+				"day": "lun",
+				"start": 10,
+				"end": 12
 			}
 		]
 	},
 	{
-		"Ctg": "Electivas",
-		"Level": "",
-		"Title": "TÉCNICA VOCAL Y MANEJO DE LA VOZ - ELECTIVA",
-		"Nrc": "51806",
-		"Hours": [
+		"ctg": "Electivas",
+		"level": "",
+		"title": "TÉCNICA VOCAL Y MANEJO DE LA VOZ - ELECTIVA",
+		"nrc": "19365",
+		"hour": [
 			{
-				"Day": "mar",
-				"Start": 10,
-				"End": 12
+				"day": "jue",
+				"start": 10,
+				"end": 12
 			}
 		]
 	}

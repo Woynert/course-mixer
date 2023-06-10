@@ -58,7 +58,7 @@ func main() {
 	output := os.Stdout
 	if len(os.Args) > 1 {
 		var err error
-		output, err = os.OpenFile(os.Args[1], os.O_WRONLY, 0777)
+		output, err = os.Create(os.Args[1])
 		utils.Fatal(err)
 	}
 	courses := downloadData()
@@ -66,5 +66,4 @@ func main() {
 	encoder.SetIndent("", "\t")
 	err := encoder.Encode(courses)
 	utils.Fatal(err)
-
 }

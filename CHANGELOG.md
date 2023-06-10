@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.0.3 (2023-06-10)
+
+
+### Bug Fixes
+
+* removed unused docker build ([e6f2334](https://github.com/shoriwe/course-mixer/commit/e6f2334af4ed9edd261c6ca7b0367d2e23c028e4))
+
 ### 0.0.2 (2023-06-10)
 
 ### 0.0.1 (2023-06-10)

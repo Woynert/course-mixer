@@ -8,8 +8,8 @@ import (
 
 	"log"
 
-	"github.com/PedroChaparro/PI202202-alako-data/parser"
-	"github.com/PedroChaparro/PI202202-alako-data/utils"
+	"github.com/Woynert/course-mixer/parser"
+	"github.com/Woynert/course-mixer/utils"
 	"golang.org/x/net/html"
 )
 

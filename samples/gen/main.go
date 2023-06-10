@@ -8,9 +8,9 @@ import (
 	"os"
 	"strings"
 
-	"github.com/PedroChaparro/PI202202-alako-data/parser"
-	"github.com/PedroChaparro/PI202202-alako-data/scraper"
-	"github.com/PedroChaparro/PI202202-alako-data/utils"
+	"github.com/Woynert/course-mixer/parser"
+	"github.com/Woynert/course-mixer/scraper"
+	"github.com/Woynert/course-mixer/utils"
 	"github.com/dave/jennifer/jen"
 )
 

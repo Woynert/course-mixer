@@ -4,8 +4,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/PedroChaparro/PI202202-alako-data/samples"
-	"github.com/PedroChaparro/PI202202-alako-data/utils"
+	"github.com/Woynert/course-mixer/samples"
+	"github.com/Woynert/course-mixer/utils"
 	"github.com/stretchr/testify/assert"
 	"golang.org/x/net/html"
 )

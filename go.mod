@@ -1,4 +1,4 @@
-module github.com/PedroChaparro/PI202202-alako-data
+module github.com/Woynert/course-mixer
 
 go 1.19
 

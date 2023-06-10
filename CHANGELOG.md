@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.0.4 (2023-06-10)
+
+
+### Bug Fixes
+
+* use of Create instead of OpenFile to handle JSON file writes ([5069cbb](https://github.com/shoriwe/course-mixer/commit/5069cbb5b546e0fba357bdd184ec11e339c47a7d))
+
 ### 0.0.3 (2023-06-10)
 
 

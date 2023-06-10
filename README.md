@@ -1,8 +1,8 @@
 # Course Mixer
 
-[![Build](https://github.com/shoriwe/course-mixer/actions/workflows/build.yaml/badge.svg)](https://github.com/shoriwe/course-mixer/actions/workflows/build.yaml)
-[![Go Report Card](https://goreportcard.com/badge/github.com/shoriwe/course-mixer)](https://goreportcard.com/report/github.com/shoriwe/course-mixer)
-![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/shoriwe/course-mixer)
+[![Build](https://github.com/Woynert/course-mixer/actions/workflows/build.yaml/badge.svg)](https://github.com/Woynert/course-mixer/actions/workflows/build.yaml)
+[![Go Report Card](https://goreportcard.com/badge/github.com/Woynert/course-mixer)](https://goreportcard.com/report/github.com/Woynert/course-mixer)
+![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/Woynert/course-mixer)
 
 A quickly thrown together tool for trying courses schedules (Linux, Macintosh, Windows).
 

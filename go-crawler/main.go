@@ -1,13 +1,8 @@
 package main
 
 import (
-	"encoding/json" // Write json file
-	"fmt"           // Parse requests
+	"encoding/json"
 	"os"
-
-	//"bufio"
-
-	// Regular expressions
 
 	"github.com/PedroChaparro/PI202202-alako-data/scraper"
 	"github.com/PedroChaparro/PI202202-alako-data/utils"
@@ -31,35 +26,6 @@ type Course struct {
 	Title string `json:"title"`
 	Nrc   string `json:"nrc"`
 	Hours []Hour `json:"hour"`
-}
-
-// NOTE: Define your queries here
-// Name - Optional
-// File - The html file name inside the datain folder
-// Cols - The amount of columns found
-
-var queries = []Query{
-	{
-		Name: "Sistemas",
-		File: "sistemas.html",
-		Cols: 13,
-	},
-	{
-		Name: "Electivas",
-		File: "electivas.html",
-		Cols: 12,
-	},
-}
-
-func createNewHour(day string, hourStr string) Hour {
-	fmt.Println(day, hourStr)
-	newH := Hour{
-		Day:   "lun",
-		Start: 10,
-		End:   11,
-	}
-	panic(1)
-	return newH
 }
 
 func downloadData() []Course {

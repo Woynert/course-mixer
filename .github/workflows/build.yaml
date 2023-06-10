@@ -1,0 +1,91 @@
+name: Build
+
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Go
+        uses: actions/setup-go@v3
+        with:
+          go-version: "1.20"
+      
+      - name: Generate
+        run: go generate ./...
+
+      - name: Build
+        run: go build -v ./...
+
+      - name: Test
+        run: go test -v ./...
+
+  versioning:
+    permissions:
+      contents: write
+    needs: test
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.latest_version.outputs.version }}
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Git Identity
+        run: |
+          git checkout main
+          git fetch --all --tags
+          git config --global user.email "antoniojosedonishung@gmail.com"
+          git config --global user.name "Antonio Donis"
+
+      - name: Setup node 18.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+          cache: "npm"
+
+      - name: Changelog
+        run: 'npx standard-version --message "[ci skip] chore(release): %s"'
+
+      - name: Push changes
+        run: git push --follow-tags --force origin main
+
+      - id: latest_version
+        name: Latest version
+        run: python version.py >> $GITHUB_OUTPUT
+
+  release-github:
+    permissions:
+      contents: write
+      packages: write
+    needs:
+      - versioning
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Linux binary
+        run: go build -v -o bin/${{ github.event.repository.name }}
+        env:
+          GOOS: linux
+          GOARCH: amd64
+
+      - name: Windows binary
+        run: go build -v -o bin/${{ github.event.repository.name }}.exe
+        env:
+          GOOS: windows
+          GOARCH: amd64
+
+      - name: UPX binaries
+        run: upx bin/*
+
+      - name: GitHub release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            bin/${{ github.event.repository.name }}
+            bin/${{ github.event.repository.name }}.exe
+          tag_name: v${{needs.versioning.outputs.version}}

@@ -10,16 +10,16 @@ enum DAY{
 }
 
 const DAYNAME = [
-	"Lun", "Mar", "Mie", "Jue", "Vie", "Sab"
+	"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
 ]
 
 const DAYCODE = {
-	lun = 0,
-	mar = 1,
-	mie = 2,
-	jue = 3,
-	vie = 4,
-	sab = 5,
+	Monday = 0,
+	Tuesday = 1,
+	Wednesday = 2,
+	Thursday = 3,
+	Friday = 4,
+	Saturday = 5,
 }
 
 # estructura de una hora (array)
@@ -297,7 +297,7 @@ func parse_json_to_courses(json: Array):
 			hours.append([h["day"], h["start"], h["end"]])
 			
 		print(hours)
-		courses.append(create_class(c["title"], c["nrc"], hours, c["level"]))
+		courses.append(create_class(c["title"], c["nrc"], hours, str(c["level"])))
 		
 	# reset selected courses
 	for i in range(activeCourses.size()):

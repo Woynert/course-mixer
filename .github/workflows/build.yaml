@@ -65,13 +65,13 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Linux binary
-        run: go build -v -o bin/${{ env.GITHUB_REPOSITORY#*/ }}"
+        run: go build -v -o bin/${{ env.GITHUB_REPOSITORY.split('/')[1] }}"
         env:
           GOOS: linux
           GOARCH: amd64
 
       - name: Windows binary
-        run: go build -v -o bin/${{ env.GITHUB_REPOSITORY#*/ }}".exe
+        run: go build -v -o bin/${{ env.GITHUB_REPOSITORY.split('/')[1] }}".exe
         env:
           GOOS: windows
           GOARCH: amd64
@@ -83,8 +83,8 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           files: |
-            bin/${{ env.GITHUB_REPOSITORY#*/ }}"
-            bin/${{ env.GITHUB_REPOSITORY#*/ }}".exe
+            bin/${{ env.GITHUB_REPOSITORY.split('/')[1] }}"
+            bin/${{ env.GITHUB_REPOSITORY.split('/')[1] }}".exe
           tag_name: v${{needs.versioning.outputs.version}}
 
   release-docker:

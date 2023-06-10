@@ -10,23 +10,18 @@ import (
 
 	"github.com/PedroChaparro/PI202202-alako-data/parser"
 	"github.com/PedroChaparro/PI202202-alako-data/scraper"
+	"github.com/PedroChaparro/PI202202-alako-data/utils"
 	"github.com/dave/jennifer/jen"
 )
-
-func fatal(err error) {
-	if err != nil {
-		log.Fatal(err)
-	}
-}
 
 func downloadFile(sampleNumber int, form *scraper.Form, facultyName, faculty string) {
 	log.Printf("[*] downloading %s\n", facultyName)
 	res, err := scraper.DownloadFaculty(form.Action, faculty)
-	fatal(err)
+	utils.Fatal(err)
 	defer res.Body.Close()
 	var buffer bytes.Buffer
 	_, err = io.Copy(&buffer, res.Body)
-	fatal(err)
+	utils.Fatal(err)
 	buffer2 := bytes.NewBuffer(buffer.Bytes())
 	courses, err := parser.Parse(&buffer)
 	if err != nil {
@@ -40,7 +35,7 @@ func downloadFile(sampleNumber int, form *scraper.Form, facultyName, faculty str
 	filename := fmt.Sprintf("sample_%d.html", sampleNumber)
 	log.Printf("[*] writing file to: %s\n", filename)
 	sample, err := os.Create(filename)
-	fatal(err)
+	utils.Fatal(err)
 	defer sample.Close()
 	io.Copy(sample, buffer2)
 	log.Printf("[+] sample file created: %s\n", filename)
@@ -48,9 +43,9 @@ func downloadFile(sampleNumber int, form *scraper.Form, facultyName, faculty str
 
 func downloadFiles() {
 	classesUrl, err := scraper.GetClassesUrl(scraper.OfficialURL)
-	fatal(err)
+	utils.Fatal(err)
 	form, err := scraper.GetForm(scraper.OfficialURL, classesUrl)
-	fatal(err)
+	utils.Fatal(err)
 	sampleNumber := 1
 	for facultyName, faculty := range form.Faculties {
 		downloadFile(sampleNumber, form, facultyName, faculty)
@@ -60,7 +55,7 @@ func downloadFiles() {
 
 func createSampleGo() {
 	entries, err := os.ReadDir(".")
-	fatal(err)
+	utils.Fatal(err)
 	file := jen.NewFile("samples")
 	file.Anon("embed")
 	var variables jen.Dict = jen.Dict{}
@@ -77,10 +72,10 @@ func createSampleGo() {
 	}
 	file.Line().Var().Id("Samples").Op("=").Map(jen.String()).String().Values(variables)
 	samples, err := os.Create("samples.go")
-	fatal(err)
+	utils.Fatal(err)
 	defer samples.Close()
 	_, err = samples.WriteString(fmt.Sprintf("%#v", file))
-	fatal(err)
+	utils.Fatal(err)
 }
 
 func main() {

@@ -28,6 +28,7 @@ const DAYCODE = {
 # 2 end -> 1-24
 
 class Course:
+	var ctg: String
 	var level: String
 	var name: String
 	var nrc: String
@@ -37,6 +38,8 @@ class Course:
 
 var courses: Array = []
 var activeCourses: Array = []
+var categories: Array = []
+var categoryControls: Array = []
 
 var listitem = preload("res://controls/item.tscn")
 
@@ -72,9 +75,6 @@ export var fontCourses:DynamicFont
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	
-	# get data
-	courses = data()
 	
 	# generate controls
 	genControls()
@@ -196,24 +196,42 @@ func _draw():
 
 func genControls():
 	
+	# clean
+	
 	free_children(courseContainer as Node)
 	
-	# fill optionbutton
+	# fill categories
 	
-	
+	#categorySelection
 	
 	var c  # child
 	var cb # checkbox
+	var ctg
 	
 	# instance for every course
 	for i in range(courses.size()):
 		
+		ctg = courses[i].ctg
+		
+		
+		# build categories
+		if !categories.has(ctg):
+			categories.append(ctg)
+			categorySelection.add_item(ctg)
+		
+		if categories[categorySelection.selected] != ctg:
+			continue
+
 		c = listitem.instance()
 		c.get_node("HBoxContainer/Label").text = courses[i].level + " " + courses[i].nrc + " " + courses[i].name
 		
 		# connect signal
 		cb = c.get_node("HBoxContainer/CheckBox")
 		cb.connect("toggled", self, "checkboxToggleSignal", [i])
+		
+		
+		# add controls to categories
+		
 		
 		courseContainer.add_child(c)
 		
@@ -234,26 +252,10 @@ func showSelectedCourses():
 			var c = courses[i]
 			selectedCourseContainer.text += c.nrc + " " + c.name + "\n"
 	
-func data() -> Array:
 	
-	var c = []
-	"""
-	c.append(create_class("ASEGURAMIENTO","8820",[
-		["lun", 14, 16],
-		["mar", 14, 16]
-	]))
-	c.append(create_class("DERECHO INFORMATICO","5559",[
-		["lun", 7, 8.4],
-		["jue", 7, 8.4]
-	]))
-	c.append(create_class("Mobiles","17282",[
-		["lun", 10, 11.4]
-	]))"""
-		
-	return c
-	
-func create_class(name: String, nrc: String, hours: Array, level: String) -> Course:
+func create_class(ctg: String, name: String, nrc: String, hours: Array, level: String) -> Course:
 	var c = Course.new()
+	c.ctg   = ctg
 	c.name  = name
 	c.nrc   = nrc
 	c.hours = hours
@@ -277,7 +279,7 @@ func parse_json_to_courses(json: Array):
 		for h in c["hour"]:
 			hours.append([h["day"], h["start"], h["end"]])
 		
-		courses.append(create_class(c["title"], c["nrc"], hours, str(c["level"])))
+		courses.append(create_class(c["ctg"], c["title"], c["nrc"], hours, str(c["level"])))
 		
 	# reset selected courses
 	for i in range(activeCourses.size()):

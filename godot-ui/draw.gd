@@ -32,9 +32,6 @@ class Course:
 	var name: String
 	var nrc: String
 	var hours: Array = []
-		
-
-
 
 # create courses
 
@@ -47,8 +44,6 @@ export var itemContainerPath: NodePath
 var itemContainer: VBoxContainer
 export var selectedCoursesContainerPath: NodePath
 var selectedCoursesContainer: TextEdit
-	
-	
 
 #colors
 var GRAY: Color = Color(.99,.99,.99,1)
@@ -72,7 +67,6 @@ var bight:float = rect_size.y
 var wd:float = bigwd - xstr -4
 var ht:float = bight - ystr -4
 
-
 #font
 export var fontTags:DynamicFont
 export var fontCourses:DynamicFont
@@ -90,8 +84,6 @@ func _ready():
 	
 	# generate controls
 	genControls()
-	
-
 
 func _draw():
 	
@@ -107,7 +99,6 @@ func _draw():
 	# clear all labels
 	var volconlab: Node2D = $VolatileLabel
 	free_children(volconlab as Node)
-	
 	
 	# dynamic label
 	var mylabel:Label
@@ -208,9 +199,6 @@ func _draw():
 			mylabel.set("custom_fonts/font", fontCourses)
 			mylabel.set("custom_colors/font_color", BLACK)
 			volconlab.add_child(mylabel)
-	
-	# for i in range(courses.size()):
-	
 
 func genControls():
 	
@@ -222,7 +210,6 @@ func genControls():
 	
 	# instance for every course
 	for i in range(courses.size()):
-		print()
 		
 		c = listitem.instance()
 		c.get_node("HBoxContainer/Label").text = courses[i].level + " " + courses[i].nrc + " " + courses[i].name
@@ -235,7 +222,6 @@ func genControls():
 		
 func checkboxToggleSignal(buttonPressed, courseId: int):
 	activeCourses[courseId] = buttonPressed
-	print(activeCourses)
 	
 	# force redraw
 	self.update()
@@ -293,8 +279,7 @@ func parse_json_to_courses(json: Array):
 		# convert hours
 		for h in c["hour"]:
 			hours.append([h["day"], h["start"], h["end"]])
-			
-		print(hours)
+		
 		courses.append(create_class(c["title"], c["nrc"], hours, str(c["level"])))
 		
 	# reset selected courses
@@ -304,8 +289,6 @@ func parse_json_to_courses(json: Array):
 	genControls()
 	self.update()
 	
-	
-	
 func free_children(node: Node):
 	
 	var children = node.get_children()
@@ -313,6 +296,3 @@ func free_children(node: Node):
 		var c = children[i]
 		node.remove_child(c)
 		c.queue_free()
-	
-		
-	

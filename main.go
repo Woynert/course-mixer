@@ -40,6 +40,13 @@ func downloadData() []Course {
 				Start: hour.From.Hour(),
 				End:   hour.To.Hour(),
 			}
+			if h.End == h.Start {
+				// i.e. 8:00 - 8:45
+				h.End += 1
+			} else if hour.To.Minute() > 0 {
+				// i.e. 10:00 - 11:45
+				h.End += 1
+			}
 			hours = append(hours, h)
 		}
 		c := Course{

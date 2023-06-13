@@ -28,27 +28,24 @@ const DAYCODE = {
 # 2 end -> 1-24
 
 class Course:
+	var ctg: String
 	var level: String
 	var name: String
 	var nrc: String
 	var hours: Array = []
-		
-
-
 
 # create courses
 
 var courses: Array = []
 var activeCourses: Array = []
+var categories: Array = []
+var categoryControls: Array = []
 
 var listitem = preload("res://controls/item.tscn")
 
-export var itemContainerPath: NodePath
-var itemContainer: VBoxContainer
-export var selectedCoursesContainerPath: NodePath
-var selectedCoursesContainer: TextEdit
-	
-	
+onready var courseContainer: VBoxContainer = $"%courseContainer"
+onready var selectedCourseContainer: TextEdit = $"%selectedCoursesContainer"
+onready var categorySelector: OptionButton = $"%categorySelector"
 
 #colors
 var GRAY: Color = Color(.99,.99,.99,1)
@@ -72,28 +69,18 @@ var bight:float = rect_size.y
 var wd:float = bigwd - xstr -4
 var ht:float = bight - ystr -4
 
-
 #font
-export var dynamic_font:DynamicFont = DynamicFont.new()
+export var fontTags:DynamicFont
+export var fontCourses:DynamicFont
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	
-	dynamic_font.size = 15
-	
-	# get nodes from paths
-	
-	itemContainer = get_node(itemContainerPath)
-	selectedCoursesContainer = get_node(selectedCoursesContainerPath)
-	
-	# get data
-	courses = data()
-	#print(courses[1].hours)
-	
 	# generate controls
 	genControls()
 	
-
+	# connect signals
+	categorySelector.connect("item_selected", self, "on_category_selected")
 
 func _draw():
 	
@@ -109,7 +96,6 @@ func _draw():
 	# clear all labels
 	var volconlab: Node2D = $VolatileLabel
 	free_children(volconlab as Node)
-	
 	
 	# dynamic label
 	var mylabel:Label
@@ -138,7 +124,7 @@ func _draw():
 		mylabel.grow_vertical = Control.GROW_DIRECTION_END
 		
 		mylabel.text = DAYNAME[i]
-		mylabel.set("custom_fonts/font", dynamic_font)
+		mylabel.set("custom_fonts/font", fontTags)
 		mylabel.set("custom_colors/font_color", BLACK)
 		volconlab.add_child(mylabel)
 		
@@ -161,7 +147,7 @@ func _draw():
 		mylabel.grow_vertical = Control.GROW_DIRECTION_BOTH
 		
 		mylabel.text = str(hour) 
-		mylabel.set("custom_fonts/font", dynamic_font)
+		mylabel.set("custom_fonts/font", fontTags)
 		mylabel.set("custom_colors/font_color", BLACK)
 		volconlab.add_child(mylabel)
 	
@@ -207,72 +193,67 @@ func _draw():
 			mylabel.autowrap = true
 			
 			mylabel.text = c.name + " " + c.nrc
-			mylabel.set("custom_fonts/font", dynamic_font)
+			mylabel.set("custom_fonts/font", fontCourses)
 			mylabel.set("custom_colors/font_color", BLACK)
 			volconlab.add_child(mylabel)
-	
-	# for i in range(courses.size()):
-	
 
 func genControls():
 	
+	free_children(courseContainer as Node)
 	
-	free_children(itemContainer as Node)
-	
-	var c  # child
-	var cb # checkbox
+	var item  # child
+	var cb: CheckBox # checkbox
+	var ctg
 	
 	# instance for every course
 	for i in range(courses.size()):
-		print()
 		
-		c = listitem.instance()
-		c.get_node("HBoxContainer/Label").text = courses[i].level + " " + courses[i].nrc + " " + courses[i].name
+		ctg = courses[i].ctg
+		
+		# build categories
+		if !categories.has(ctg):
+			categories.append(ctg)
+			categorySelector.add_item(ctg)
+		
+		if categories[categorySelector.selected] != ctg:
+			continue
+
+		item = listitem.instance()
+		item.get_node("CourseTitle").text = courses[i].level + " " + courses[i].nrc + " " + courses[i].name
 		
 		# connect signal
-		cb = c.get_node("HBoxContainer/CheckBox")
+		cb = item.get_node("CheckBox")
 		cb.connect("toggled", self, "checkboxToggleSignal", [i])
+		cb.pressed = activeCourses[i]
 		
-		itemContainer.add_child(c)
+		# add control
+		courseContainer.add_child(item)
 		
 func checkboxToggleSignal(buttonPressed, courseId: int):
 	activeCourses[courseId] = buttonPressed
-	print(activeCourses)
 	
 	# force redraw
 	self.update()
 	self.showSelectedCourses()
 	
+func on_category_selected(index: int):
+	print(index)
+	genControls()
+	
 func showSelectedCourses():
 	
-	selectedCoursesContainer.text = ""
+	selectedCourseContainer.text = ""
 	
 	for i in range(courses.size()):
 		
 		if (activeCourses[i]):
 			var c = courses[i]
-			selectedCoursesContainer.text += c.nrc + " " + c.name + "\n"
+			selectedCourseContainer.text += c.nrc + " " + c.name + "\n"
 	
-func data() -> Array:
 	
-	var c = []
-	"""
-	c.append(create_class("ASEGURAMIENTO","8820",[
-		["lun", 14, 16],
-		["mar", 14, 16]
-	]))
-	c.append(create_class("DERECHO INFORMATICO","5559",[
-		["lun", 7, 8.4],
-		["jue", 7, 8.4]
-	]))
-	c.append(create_class("Mobiles","17282",[
-		["lun", 10, 11.4]
-	]))"""
-		
-	return c
-	
-func create_class(name: String, nrc: String, hours: Array, level: String) -> Course:
+func create_class(ctg: String, name: String, nrc: String, hours: Array, level: String) -> Course:
 	var c = Course.new()
+	c.ctg   = ctg
 	c.name  = name
 	c.nrc   = nrc
 	c.hours = hours
@@ -295,9 +276,8 @@ func parse_json_to_courses(json: Array):
 		# convert hours
 		for h in c["hour"]:
 			hours.append([h["day"], h["start"], h["end"]])
-			
-		print(hours)
-		courses.append(create_class(c["title"], c["nrc"], hours, str(c["level"])))
+		
+		courses.append(create_class(c["ctg"], c["title"], c["nrc"], hours, str(c["level"])))
 		
 	# reset selected courses
 	for i in range(activeCourses.size()):
@@ -306,8 +286,6 @@ func parse_json_to_courses(json: Array):
 	genControls()
 	self.update()
 	
-	
-	
 func free_children(node: Node):
 	
 	var children = node.get_children()
@@ -315,6 +293,3 @@ func free_children(node: Node):
 		var c = children[i]
 		node.remove_child(c)
 		c.queue_free()
-	
-		
-	

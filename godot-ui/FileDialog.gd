@@ -40,5 +40,4 @@ func _on_FileDialog_file_selected(path):
 		acceptDialog.popup_centered(Vector2(300,100))
 		return
 	
-	print(json.result)
 	mainController.parse_json_to_courses(json.result)

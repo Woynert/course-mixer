@@ -44,8 +44,8 @@ var categoryControls: Array = []
 var listitem = preload("res://controls/item.tscn")
 
 onready var courseContainer: VBoxContainer = $"%courseContainer"
-onready var selectedCourseContainer: TextEdit = $"%selectedCourseContainer"
-onready var categorySelection: OptionButton = $"%categorySelection"
+onready var selectedCourseContainer: TextEdit = $"%selectedCoursesContainer"
+onready var categorySelector: OptionButton = $"%categorySelector"
 
 #colors
 var GRAY: Color = Color(.99,.99,.99,1)
@@ -78,6 +78,9 @@ func _ready():
 	
 	# generate controls
 	genControls()
+	
+	# connect signals
+	categorySelector.connect("item_selected", self, "on_category_selected")
 
 func _draw():
 	
@@ -202,7 +205,7 @@ func genControls():
 	
 	# fill categories
 	
-	#categorySelection
+	#categorySelector
 	
 	var c  # child
 	var cb # checkbox
@@ -217,9 +220,9 @@ func genControls():
 		# build categories
 		if !categories.has(ctg):
 			categories.append(ctg)
-			categorySelection.add_item(ctg)
+			categorySelector.add_item(ctg)
 		
-		if categories[categorySelection.selected] != ctg:
+		if categories[categorySelector.selected] != ctg:
 			continue
 
 		c = listitem.instance()
@@ -241,6 +244,10 @@ func checkboxToggleSignal(buttonPressed, courseId: int):
 	# force redraw
 	self.update()
 	self.showSelectedCourses()
+	
+func on_category_selected(index: int):
+	print(index)
+	genControls()
 	
 func showSelectedCourses():
 	

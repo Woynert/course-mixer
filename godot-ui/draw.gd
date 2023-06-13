@@ -199,23 +199,16 @@ func _draw():
 
 func genControls():
 	
-	# clean
-	
 	free_children(courseContainer as Node)
 	
-	# fill categories
-	
-	#categorySelector
-	
-	var c  # child
-	var cb # checkbox
+	var item  # child
+	var cb: CheckBox # checkbox
 	var ctg
 	
 	# instance for every course
 	for i in range(courses.size()):
 		
 		ctg = courses[i].ctg
-		
 		
 		# build categories
 		if !categories.has(ctg):
@@ -225,18 +218,16 @@ func genControls():
 		if categories[categorySelector.selected] != ctg:
 			continue
 
-		c = listitem.instance()
-		c.get_node("HBoxContainer/Label").text = courses[i].level + " " + courses[i].nrc + " " + courses[i].name
+		item = listitem.instance()
+		item.get_node("CourseTitle").text = courses[i].level + " " + courses[i].nrc + " " + courses[i].name
 		
 		# connect signal
-		cb = c.get_node("HBoxContainer/CheckBox")
+		cb = item.get_node("CheckBox")
 		cb.connect("toggled", self, "checkboxToggleSignal", [i])
+		cb.pressed = activeCourses[i]
 		
-		
-		# add controls to categories
-		
-		
-		courseContainer.add_child(c)
+		# add control
+		courseContainer.add_child(item)
 		
 func checkboxToggleSignal(buttonPressed, courseId: int):
 	activeCourses[courseId] = buttonPressed

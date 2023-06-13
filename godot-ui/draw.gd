@@ -74,12 +74,11 @@ var ht:float = bight - ystr -4
 
 
 #font
-export var dynamic_font:DynamicFont = DynamicFont.new()
+export var fontTags:DynamicFont
+export var fontCourses:DynamicFont
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	
-	dynamic_font.size = 15
 	
 	# get nodes from paths
 	
@@ -88,7 +87,6 @@ func _ready():
 	
 	# get data
 	courses = data()
-	#print(courses[1].hours)
 	
 	# generate controls
 	genControls()
@@ -138,7 +136,7 @@ func _draw():
 		mylabel.grow_vertical = Control.GROW_DIRECTION_END
 		
 		mylabel.text = DAYNAME[i]
-		mylabel.set("custom_fonts/font", dynamic_font)
+		mylabel.set("custom_fonts/font", fontTags)
 		mylabel.set("custom_colors/font_color", BLACK)
 		volconlab.add_child(mylabel)
 		
@@ -161,7 +159,7 @@ func _draw():
 		mylabel.grow_vertical = Control.GROW_DIRECTION_BOTH
 		
 		mylabel.text = str(hour) 
-		mylabel.set("custom_fonts/font", dynamic_font)
+		mylabel.set("custom_fonts/font", fontTags)
 		mylabel.set("custom_colors/font_color", BLACK)
 		volconlab.add_child(mylabel)
 	
@@ -207,7 +205,7 @@ func _draw():
 			mylabel.autowrap = true
 			
 			mylabel.text = c.name + " " + c.nrc
-			mylabel.set("custom_fonts/font", dynamic_font)
+			mylabel.set("custom_fonts/font", fontCourses)
 			mylabel.set("custom_colors/font_color", BLACK)
 			volconlab.add_child(mylabel)
 	

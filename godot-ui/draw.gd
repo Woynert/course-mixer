@@ -40,10 +40,8 @@ var activeCourses: Array = []
 
 var listitem = preload("res://controls/item.tscn")
 
-export var itemContainerPath: NodePath
-var itemContainer: VBoxContainer
-export var selectedCoursesContainerPath: NodePath
-var selectedCoursesContainer: TextEdit
+onready var itemContainer = $"%courseContainer"
+onready var selectedCoursesContainer = $"%selectedCoursesContainer"
 
 #colors
 var GRAY: Color = Color(.99,.99,.99,1)
@@ -73,11 +71,6 @@ export var fontCourses:DynamicFont
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	
-	# get nodes from paths
-	
-	itemContainer = get_node(itemContainerPath)
-	selectedCoursesContainer = get_node(selectedCoursesContainerPath)
 	
 	# get data
 	courses = data()

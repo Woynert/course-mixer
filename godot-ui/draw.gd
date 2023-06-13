@@ -40,8 +40,9 @@ var activeCourses: Array = []
 
 var listitem = preload("res://controls/item.tscn")
 
-onready var itemContainer = $"%courseContainer"
-onready var selectedCoursesContainer = $"%selectedCoursesContainer"
+onready var courseContainer: VBoxContainer = $"%courseContainer"
+onready var selectedCourseContainer: TextEdit = $"%selectedCourseContainer"
+onready var categorySelection: OptionButton = $"%categorySelection"
 
 #colors
 var GRAY: Color = Color(.99,.99,.99,1)
@@ -195,8 +196,11 @@ func _draw():
 
 func genControls():
 	
+	free_children(courseContainer as Node)
 	
-	free_children(itemContainer as Node)
+	# fill optionbutton
+	
+	
 	
 	var c  # child
 	var cb # checkbox
@@ -211,7 +215,7 @@ func genControls():
 		cb = c.get_node("HBoxContainer/CheckBox")
 		cb.connect("toggled", self, "checkboxToggleSignal", [i])
 		
-		itemContainer.add_child(c)
+		courseContainer.add_child(c)
 		
 func checkboxToggleSignal(buttonPressed, courseId: int):
 	activeCourses[courseId] = buttonPressed
@@ -222,13 +226,13 @@ func checkboxToggleSignal(buttonPressed, courseId: int):
 	
 func showSelectedCourses():
 	
-	selectedCoursesContainer.text = ""
+	selectedCourseContainer.text = ""
 	
 	for i in range(courses.size()):
 		
 		if (activeCourses[i]):
 			var c = courses[i]
-			selectedCoursesContainer.text += c.nrc + " " + c.name + "\n"
+			selectedCourseContainer.text += c.nrc + " " + c.name + "\n"
 	
 func data() -> Array:
 	

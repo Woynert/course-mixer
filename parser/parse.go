@@ -72,7 +72,7 @@ func withLevel(children []string) (c *Course, err error) {
 			}
 			var hour *utils.Hour
 			for dayIndex, hourStr := range children[7:] {
-				if hourStr != "\u00a0" {
+				if hourStr != "" {
 					hour, err = utils.ParseHours(time.Weekday(dayIndex+1), hourStr)
 					if err == nil {
 						c.Hours = append(c.Hours, hour)
@@ -92,7 +92,12 @@ func parseCourse(tr *html.Node) (*Course, error) {
 		if td.Data != "td" || td.FirstChild == nil {
 			continue
 		}
-		children = append(children, td.FirstChild.Data)
+		tdChild := td.FirstChild.NextSibling
+		if tdChild == nil || tdChild.FirstChild == nil {
+			children = append(children, "")
+			continue
+		}
+		children = append(children, tdChild.FirstChild.Data)
 	}
 	switch {
 	case len(children) <= 6:

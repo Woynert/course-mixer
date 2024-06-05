@@ -8,7 +8,7 @@ import (
 
 var (
 	timeFormat      = "03:04 PM"
-	timeRegexp      = regexp.MustCompile(`\d{2}:\d{2} (AM|PM)`)
+	timeRegexp      = regexp.MustCompile(`\d{1,2}:\d{1,2} (AM|PM)`)
 	classroomRegexp = regexp.MustCompile(`[A-Za-z]\d+`)
 )
 
@@ -23,6 +23,12 @@ func ParseHours(day time.Weekday, hour string) (*Hour, error) {
 	times := timeRegexp.FindAllString(hour, -1)
 	if len(times) != 2 {
 		return nil, fmt.Errorf("expecting format such as: 12:00 PM-01:40 PM C203 but received: %s", hour)
+	}
+	// Ensure zero prefix: 9:00 -> 09:00
+	for i, time := range times {
+		if len(time) == (len(timeFormat) - 1) {
+			times[i] = "0" + times[i]
+		}
 	}
 	// The previous regexp makes sure this always is OK
 	var from, to time.Time

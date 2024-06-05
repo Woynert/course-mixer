@@ -13,14 +13,14 @@ import (
 	"golang.org/x/net/html"
 )
 
-const OfficialURL = "https://horariosupb.bucaramanga.upb.edu.co/"
+const OfficialURL = "https://horariosupb.bucaramanga.upb.edu.co/horariosclases"
 
 type Form struct {
 	Action    string            `json:"action"`
 	Faculties map[string]string `json:"faculties"`
 }
 
-func GetForm(target, classesUrl string) (*Form, error) {
+func GetForm(classesUrl string) (*Form, error) {
 	res, err := http.Get(classesUrl)
 	if err != nil {
 		return nil, fmt.Errorf("failed to get %s: %w", classesUrl, err)
@@ -48,7 +48,7 @@ func GetForm(target, classesUrl string) (*Form, error) {
 		return nil, fmt.Errorf("select not found in %s", classesUrl)
 	}
 	form := &Form{
-		Action:    target + action,
+		Action:    action,
 		Faculties: map[string]string{},
 	}
 	for option := s.FirstChild; option != nil; option = option.NextSibling {
@@ -67,64 +67,37 @@ var (
 	actionRegexp = regexp.MustCompile(`"\?var=\S+"`)
 )
 
-func GetClassesUrl(target string) (finalUrl string, err error) {
-	res, err := http.Get(target)
-	if err != nil {
-		return "", fmt.Errorf("failed to get %s: %w", target, err)
-	}
-	defer res.Body.Close()
-	root, err := html.Parse(res.Body)
-	if err != nil {
-		return "", fmt.Errorf("could not parse %s html: %w", target, err)
-	}
-	body := utils.FindTagByName(root, "body")
-	if body == nil {
-		return "", fmt.Errorf("body not found in %s", target)
-	}
-	script := utils.FindTagByName(body, "script")
-	if script == nil {
-		return "", fmt.Errorf("script not found in %s", target)
-	}
-	iClass := tabRegexp.FindString(script.FirstChild.Data)
-	actionPage := actionRegexp.FindString(iClass)
-	actionPage = actionPage[1 : len(actionPage)-1]
-	return target + actionPage, nil
-}
-
-func DownloadFaculty(action, faculty string) (*http.Response, error) {
+func DownloadFaculty(action, facultyValue string) (*http.Response, error) {
 	data := url.Values{
-		"facultad": []string{faculty},
+		"n_idfacultad": []string{facultyValue},
 	}
-	return http.PostForm(action, data)
+	fullURL := fmt.Sprintf("%s?%s", action, data.Encode())
+	return http.Get(fullURL)
 }
 
-func ParseFaculty(action, faculty string) ([]*parser.Course, error) {
-	res, err := DownloadFaculty(action, faculty)
+func ParseFaculty(action, facultyValue string) ([]*parser.Course, error) {
+	res, err := DownloadFaculty(action, facultyValue)
 	if err != nil {
-		return nil, fmt.Errorf("error while requesting courses for %s: %w", faculty, err)
+		return nil, fmt.Errorf("error while requesting courses for %s: %w", facultyValue, err)
 	}
 	defer res.Body.Close()
 	return parser.Parse(res.Body)
 }
 
 func Crawl() ([]*parser.Course, error) {
-	classesUrl, err := GetClassesUrl(OfficialURL)
-	if err != nil {
-		return nil, fmt.Errorf("could not obtain classes url: %w", err)
-	}
 	// First Get request to obtain a valid Form token, the value of the select
-	form, err := GetForm(OfficialURL, classesUrl)
+	form, err := GetForm(OfficialURL)
 	if err != nil {
 		return nil, fmt.Errorf("could not get action: %w", err)
 	}
 	var courses []*parser.Course
-	for facultyName, faculty := range form.Faculties {
-		result, err := ParseFaculty(form.Action, faculty)
+	for facultyName, facultyValue := range form.Faculties {
+		result, err := ParseFaculty(form.Action, facultyValue)
 		if err != nil {
 			log.Printf("Error %s: %s", facultyName, err.Error())
 			continue
-			// return nil, fmt.Errorf("error while downloading faculty: %s: %w", faculty, err)
 		}
+		log.Printf("Done  %s", facultyName)
 		courses = append(courses, result...)
 	}
 	return courses, nil

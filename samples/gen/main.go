@@ -42,9 +42,7 @@ func downloadFile(sampleNumber int, form *scraper.Form, facultyName, faculty str
 }
 
 func downloadFiles() {
-	classesUrl, err := scraper.GetClassesUrl(scraper.OfficialURL)
-	utils.Fatal(err)
-	form, err := scraper.GetForm(scraper.OfficialURL, classesUrl)
+	form, err := scraper.GetForm(scraper.OfficialURL)
 	utils.Fatal(err)
 	sampleNumber := 1
 	for facultyName, faculty := range form.Faculties {

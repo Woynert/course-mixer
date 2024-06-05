@@ -6,17 +6,8 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func TestGetClassesUrl(t *testing.T) {
-	classesUrl, err := GetClassesUrl(OfficialURL)
-	assert.Nil(t, err)
-	assert.NotEmpty(t, classesUrl)
-}
-
 func TestGetForm(t *testing.T) {
-	classesUrl, err := GetClassesUrl(OfficialURL)
-	assert.Nil(t, err)
-	assert.NotEmpty(t, classesUrl)
-	form, err := GetForm(OfficialURL, classesUrl)
+	form, err := GetForm(OfficialURL)
 	assert.Nil(t, err)
 	assert.NotEmpty(t, form.Action)
 	assert.NotEmpty(t, form.Faculties)
